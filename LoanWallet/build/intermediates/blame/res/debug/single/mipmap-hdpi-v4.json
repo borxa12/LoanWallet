@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\Borxa\\Documents\\AndroidStudioProjects\\LoanWallet\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\calendar.png",
+        "source": "C:\\Users\\Borxa\\Documents\\AndroidStudioProjects\\LoanWallet\\app\\src\\main\\res\\mipmap-hdpi\\calendar.png"
+    },
+    {
+        "merged": "C:\\Users\\Borxa\\Documents\\AndroidStudioProjects\\LoanWallet\\LoanWallet\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\calendar.png",
+        "source": "C:\\Users\\Borxa\\Documents\\AndroidStudioProjects\\LoanWallet\\LoanWallet\\src\\main\\res\\mipmap-hdpi\\calendar.png"
+    },
+    {
+        "merged": "C:\\Users\\Borxa\\Documents\\AndroidStudioProjects\\LoanWallet\\LoanWallet\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\Borxa\\Documents\\AndroidStudioProjects\\LoanWallet\\LoanWallet\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Borxa\\Documents\\GitHub\\LoanWallet\\LoanWallet\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\Borxa\\Documents\\GitHub\\LoanWallet\\LoanWallet\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Borxa\\Documents\\GitHub\\LoanWallet\\LoanWallet\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\calendar.png",
+        "source": "C:\\Users\\Borxa\\Documents\\GitHub\\LoanWallet\\LoanWallet\\src\\main\\res\\mipmap-hdpi\\calendar.png"
+    },
+    {
+        "merged": "C:\\Users\\Borxa\\Documents\\AndroidStudioProjects\\LoanWallet\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\Borxa\\Documents\\AndroidStudioProjects\\LoanWallet\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    }
+]

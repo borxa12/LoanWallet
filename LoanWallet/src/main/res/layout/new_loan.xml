@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingTop="5dp"
+              android:paddingBottom="10dp">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:baselineAligned="false"
+            android:paddingLeft="10dp" android:paddingRight="10dp">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_weight="0.8" android:layout_gravity="center">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tagTitle"
+                    android:id="@+id/tagTitle"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                    android:textSize="20sp"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:layout_gravity="center"
+                android:layout_margin="5dp">
+            <AutoCompleteTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lblTitle"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:baselineAligned="false"
+                  android:paddingLeft="10dp"
+                  android:paddingRight="10dp">
+        <LinearLayout android:orientation="horizontal"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.7"
+                      android:layout_gravity="center">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/tagAuthor"
+                      android:id="@+id/tagAuthor"
+                      android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                      android:textSize="20sp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.3" android:layout_gravity="center"
+        >
+            <MultiAutoCompleteTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lblAuthors"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                  android:layout_height="wrap_content" android:baselineAligned="false"
+                  android:paddingLeft="10dp" android:paddingRight="10dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                      android:layout_height="wrap_content" android:layout_weight="0.8" android:layout_gravity="center">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="@string/tagYear" android:id="@+id/tagYear"
+                      android:textSize="20sp" android:textAppearance="?android:attr/textAppearanceLarge"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                      android:layout_height="wrap_content" android:layout_weight="0.2" android:layout_gravity="center"
+        >
+            <EditText android:layout_width="fill_parent" android:layout_height="wrap_content"
+                      android:id="@+id/lblYear" android:inputType="number" android:layout_gravity="center"
+                      android:numeric="integer" android:maxLength="4"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" android:layout_weight="0.5" android:paddingLeft="10dp"
+            android:paddingRight="10dp" android:paddingTop="5dp">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/tagDescription"
+                android:id="@+id/tagDescription" android:textSize="20sp"/>
+        <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/scrollView"
+                android:fillViewport="true">
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/lblDescription"
+                        android:inputType="text"
+                        android:enabled="true"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:paddingLeft="10dp" android:paddingRight="10dp"
+            android:paddingTop="5dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="@string/tagEndLoan" android:id="@+id/tagEndLoan"
+                  android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                  android:textSize="20sp"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:inputType="date"
+                    android:ems="10"
+                    android:id="@+id/lblEndLoan"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_weight="0.6"/>
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/calendar" android:src="@mipmap/calendar"
+                    android:contentDescription="@string/calendar"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+                  android:layout_height="wrap_content" android:paddingLeft="10dp" android:paddingRight="10dp"
+                  android:paddingTop="5dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="@string/tagLender" android:id="@+id/tagLender"
+                  android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                  android:textIsSelectable="false" android:textSize="20sp"/>
+        <EditText android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  android:ems="10" android:id="@+id/lblLender" android:clickable="true" android:inputType="text"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+                  android:layout_height="wrap_content" android:paddingLeft="10dp" android:paddingRight="10dp"
+                  android:paddingTop="5dp">
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnAddLoan"
+                android:id="@+id/btnAddLoan" android:layout_gravity="center"/>
+    </LinearLayout>
+</LinearLayout>

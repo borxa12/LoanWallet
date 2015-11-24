@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "C:\\Users\\Borxa\\Documents\\AndroidStudioProjects\\LoanWallet\\LoanWallet\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
+        "source": "C:\\Users\\Borxa\\Documents\\AndroidStudioProjects\\LoanWallet\\LoanWallet\\src\\main\\res\\layout\\main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Borxa\\Documents\\AndroidStudioProjects\\LoanWallet\\LoanWallet\\build\\intermediates\\res\\merged\\debug\\layout\\new_loan.xml",
+        "source": "C:\\Users\\Borxa\\Documents\\AndroidStudioProjects\\LoanWallet\\LoanWallet\\src\\main\\res\\layout\\new_loan.xml"
+    },
+    {
+        "merged": "C:\\Users\\Borxa\\Documents\\AndroidStudioProjects\\LoanWallet\\LoanWallet\\build\\intermediates\\res\\merged\\debug\\layout\\calendar.xml",
+        "source": "C:\\Users\\Borxa\\Documents\\AndroidStudioProjects\\LoanWallet\\LoanWallet\\src\\main\\res\\layout\\calendar.xml"
+    },
+    {
+        "merged": "C:\\Users\\Borxa\\Documents\\AndroidStudioProjects\\LoanWallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\new_loan.xml",
+        "source": "C:\\Users\\Borxa\\Documents\\AndroidStudioProjects\\LoanWallet\\app\\src\\main\\res\\layout\\new_loan.xml"
+    },
+    {
+        "merged": "C:\\Users\\Borxa\\Documents\\GitHub\\LoanWallet\\LoanWallet\\build\\intermediates\\res\\merged\\debug\\layout\\new_loan.xml",
+        "source": "C:\\Users\\Borxa\\Documents\\GitHub\\LoanWallet\\LoanWallet\\src\\main\\res\\layout\\new_loan.xml"
+    },
+    {
+        "merged": "C:\\Users\\Borxa\\Documents\\AndroidStudioProjects\\LoanWallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\calendar.xml",
+        "source": "C:\\Users\\Borxa\\Documents\\AndroidStudioProjects\\LoanWallet\\app\\src\\main\\res\\layout\\calendar.xml"
+    },
+    {
+        "merged": "C:\\Users\\Borxa\\Documents\\GitHub\\LoanWallet\\LoanWallet\\build\\intermediates\\res\\merged\\debug\\layout\\calendar.xml",
+        "source": "C:\\Users\\Borxa\\Documents\\GitHub\\LoanWallet\\LoanWallet\\src\\main\\res\\layout\\calendar.xml"
+    },
+    {
+        "merged": "C:\\Users\\Borxa\\Documents\\AndroidStudioProjects\\LoanWallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
+        "source": "C:\\Users\\Borxa\\Documents\\AndroidStudioProjects\\LoanWallet\\app\\src\\main\\res\\layout\\main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Borxa\\Documents\\GitHub\\LoanWallet\\LoanWallet\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
+        "source": "C:\\Users\\Borxa\\Documents\\GitHub\\LoanWallet\\LoanWallet\\src\\main\\res\\layout\\main.xml"
+    }
+]
