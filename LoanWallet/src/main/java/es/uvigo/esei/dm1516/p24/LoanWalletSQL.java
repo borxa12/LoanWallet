@@ -3,6 +3,7 @@ package es.uvigo.esei.dm1516.p24;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 /**
  * Created by Borxa on 28/12/2015.

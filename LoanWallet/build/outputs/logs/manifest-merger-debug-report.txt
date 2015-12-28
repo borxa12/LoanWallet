@@ -30,6 +30,8 @@ ADDED from C:\Users\Borxa\Documents\GitHub\LoanWallet\LoanWallet\src\main\Androi
 		ADDED from C:\Users\Borxa\Documents\GitHub\LoanWallet\LoanWallet\src\main\AndroidManifest.xml:7:18-50
 	android:icon
 		ADDED from C:\Users\Borxa\Documents\GitHub\LoanWallet\LoanWallet\src\main\AndroidManifest.xml:8:18-52
+	android:name
+		ADDED from C:\Users\Borxa\Documents\GitHub\LoanWallet\LoanWallet\src\main\AndroidManifest.xml:9:18-37
 activity#es.uvigo.esei.dm1516.p24.Main
 ADDED from C:\Users\Borxa\Documents\GitHub\LoanWallet\LoanWallet\src\main\AndroidManifest.xml:10:9-16:20
 	android:label

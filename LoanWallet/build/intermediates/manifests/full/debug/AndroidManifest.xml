@@ -9,6 +9,7 @@
         android:targetSdkVersion="17" />
 
     <application
+        android:name="es.uvigo.esei.dm1516.p24.App"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name" >
         <activity

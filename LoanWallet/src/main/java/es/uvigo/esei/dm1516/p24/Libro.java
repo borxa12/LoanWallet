@@ -14,12 +14,12 @@ public class Libro {
     private int ano;
     private String editorial;
     private int renovaciones;
-    private GregorianCalendar fechaPrestamo;
-    private GregorianCalendar finPrestamo;
+    private String fechaPrestamo;
+    private String finPrestamo;
     private String lugarPrestamo;
 
     public Libro(String ISBN, String titulo, String autores, int ano, String editorial, int renovaciones,
-                GregorianCalendar fechaPrestamo, GregorianCalendar finPrestamo, String lugarPrestamo) {
+                 String fechaPrestamo, String finPrestamo, String lugarPrestamo) {
         this.ISBN = ISBN;
         this.titulo = titulo;
         this.autores = autores;
@@ -79,19 +79,19 @@ public class Libro {
         this.renovaciones = renovaciones;
     }
 
-    public GregorianCalendar getFechaPrestamo() {
+    public String getFechaPrestamo() {
         return fechaPrestamo;
     }
 
-    public void setFechaPrestamo(GregorianCalendar fechaPrestamo) {
+    public void setFechaPrestamo(String fechaPrestamo) {
         this.fechaPrestamo = fechaPrestamo;
     }
 
-    public GregorianCalendar getFinPrestamo() {
+    public String getFinPrestamo() {
         return finPrestamo;
     }
 
-    public void setFinPrestamo(GregorianCalendar finPrestamo) {
+    public void setFinPrestamo(String finPrestamo) {
         this.finPrestamo = finPrestamo;
     }
 
@@ -105,41 +105,10 @@ public class Libro {
 
     @Override
     public String toString() {
-        StringBuilder dateAux = new StringBuilder();
-        dateAux.append(this.getFinPrestamo().get(Calendar.DAY_OF_MONTH)).append("/");
-        switch(this.getFinPrestamo().get(Calendar.MONTH)) {
-            case 0: dateAux.append("Enero");
-                break;
-            case 1: dateAux.append("Febrero");
-                break;
-            case 2: dateAux.append("Marzo");
-                break;
-            case 3: dateAux.append("Abril");
-                break;
-            case 4: dateAux.append("Mayo");
-                break;
-            case 5: dateAux.append("Junio");
-                break;
-            case 6: dateAux.append("Julio");
-                break;
-            case 7: dateAux.append("Agosto");
-                break;
-            case 8: dateAux.append("Septiembre");
-                break;
-            case 9: dateAux.append("Octubre");
-                break;
-            case 10: dateAux.append("Noviembre");
-                break;
-            case 11: dateAux.append("Diciembre");
-                break;
-        }
-        dateAux.append("/").append(this.getFinPrestamo().get(Calendar.YEAR));
-
         StringBuilder toret = new StringBuilder();
         toret.append(this.getTitulo()).append("(").append(this.getAno()).append(")").append("\n")
                 .append(this.getAutores()).append("\n")
-                .append(dateAux.toString()).append(" - ").append(this.getLugarPrestamo());
-
+                .append(this.getFinPrestamo()).append(" (").append(this.getLugarPrestamo()).append(")");
         return toret.toString();
     }
 }

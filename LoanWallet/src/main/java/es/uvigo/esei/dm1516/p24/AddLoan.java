@@ -35,7 +35,7 @@ public class AddLoan extends Activity {
         });
 
         ImageButton btnCalendar = (ImageButton) this.findViewById(R.id.calendar);
-        final EditText labelFinPrestamo =(EditText) this.findViewById(R.id.labelFinPrestamo);
+        final EditText labelFinPrestamo = (EditText) this.findViewById(R.id.labelFinPrestamo);
         btnCalendar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -80,6 +80,11 @@ public class AddLoan extends Activity {
                         labelAutores.getText().toString(), labelAno.getText().toString(), labelEditorial.getText().toString(),
                         fecha, labelFinPrestamo.getText().toString(), labelLugarPrestamo.getText().toString()});
                 db.setTransactionSuccessful();
+                Libro libro = new Libro(labelISBN.getText().toString(), labelTitulo.getText().toString(),
+                        labelAutores.getText().toString(), Integer.parseInt(labelAno.getText().toString()),
+                        labelEditorial.getText().toString(),0,fecha,
+                        labelFinPrestamo.getText().toString(), labelLugarPrestamo.getText().toString());
+                ((App) this.getApplication()).getItemsAdapter().add(libro);
                 Toast.makeText(this.getApplicationContext(),"El préstamo se ha insertado satisfactoriamente", Toast.LENGTH_LONG).show();
             } finally {
                 db.endTransaction();
@@ -90,4 +95,5 @@ public class AddLoan extends Activity {
 
         this.finish();
     }
+
 }
