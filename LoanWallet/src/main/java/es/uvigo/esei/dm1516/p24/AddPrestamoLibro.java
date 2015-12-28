@@ -5,32 +5,29 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.*;
 
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Date;
-import java.util.GregorianCalendar;
 
 /**
  * Created by Borxa on 17/11/2015.
  */
-public class AddLoan extends Activity {
+public class AddPrestamoLibro extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.new_loan);
+        setContentView(R.layout.nuevo_prestamo_libro);
 
         Button btnAddLoan = (Button) this.findViewById(R.id.btnAddLibro);
 
         btnAddLoan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AddLoan.this.addLoan();
+                AddPrestamoLibro.this.addLoan();
             }
         });
 
@@ -39,10 +36,10 @@ public class AddLoan extends Activity {
         btnCalendar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                LayoutInflater inflater = AddLoan.this.getLayoutInflater();
+                LayoutInflater inflater = AddPrestamoLibro.this.getLayoutInflater();
                 final View dialoglayout = inflater.inflate(R.layout.calendar, null);
 
-                AlertDialog.Builder alert = new AlertDialog.Builder(AddLoan.this);
+                AlertDialog.Builder alert = new AlertDialog.Builder(AddPrestamoLibro.this);
                 alert.setView(dialoglayout);
                 alert.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
@@ -51,7 +48,7 @@ public class AddLoan extends Activity {
                         labelFinPrestamo.setText(calendar.getYear() + "-" + (calendar.getMonth()+ 1) + "-" + calendar.getDayOfMonth());
                     }
                 });
-                alert.setNegativeButton("Cancel",null);
+                alert.setNegativeButton("Cancelar",null);
                 alert.create().show();
             }
         });

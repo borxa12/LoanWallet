@@ -12,13 +12,13 @@
         android:layout_height="wrap_content"
         android:baselineAligned="false"
         android:paddingLeft="10dp"
-        android:paddingRight="10dp" >
+        android:paddingRight="10dp">
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.8"
+            android:layout_weight="0.7"
             android:layout_gravity="center" >
 
             <TextView
@@ -54,7 +54,7 @@
         <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:layout_weight="0.8" android:layout_gravity="center">
+                android:layout_height="wrap_content" android:layout_weight="0.7" android:layout_gravity="center">
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -86,7 +86,7 @@
         <LinearLayout android:orientation="horizontal"
                       android:layout_width="match_parent"
                       android:layout_height="wrap_content"
-                      android:layout_weight="0.8"
+                      android:layout_weight="0.7"
                       android:layout_gravity="center">
             <TextView android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
@@ -137,7 +137,7 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.75"
+            android:layout_weight="0.6"
             android:layout_gravity="center" >
 
             <TextView
@@ -215,8 +215,8 @@
         <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/btnAddLibro"
-                android:id="@+id/btnAddLibro" android:layout_gravity="center"/>
+                android:text="@string/btnModificarLibro"
+                android:id="@+id/btnModificarLibro" android:layout_gravity="center"/>
     </LinearLayout>
 
 </LinearLayout>

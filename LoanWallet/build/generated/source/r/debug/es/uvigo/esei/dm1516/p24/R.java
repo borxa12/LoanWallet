@@ -12,7 +12,8 @@ public final class R {
     }
     public static final class id {
         public static final int AddLoan=0x7f050002;
-        public static final int btnAddLibro=0x7f050012;
+        public static final int btnAddLibro=0x7f050013;
+        public static final int btnModificarLibro=0x7f050012;
         public static final int calendar=0x7f05000f;
         public static final int datePicker=0x7f050000;
         public static final int labelAno=0x7f05000a;
@@ -34,7 +35,8 @@ public final class R {
     public static final class layout {
         public static final int calendar=0x7f030000;
         public static final int main=0x7f030001;
-        public static final int new_loan=0x7f030002;
+        public static final int modificar_prestamo_libro=0x7f030002;
+        public static final int nuevo_prestamo_libro=0x7f030003;
     }
     public static final class mipmap {
         public static final int calendar=0x7f020000;
@@ -45,14 +47,15 @@ public final class R {
         public static final int app_name=0x7f040001;
         public static final int btnAddLibro=0x7f040002;
         public static final int btnCancel=0x7f040003;
-        public static final int btnOK=0x7f040004;
-        public static final int calendar=0x7f040005;
-        public static final int tagAno=0x7f040006;
-        public static final int tagAutores=0x7f040007;
-        public static final int tagEditorial=0x7f040008;
-        public static final int tagFinPrestamo=0x7f040009;
-        public static final int tagISBN=0x7f04000a;
-        public static final int tagLugarPrestamo=0x7f04000b;
-        public static final int tagTitulo=0x7f04000c;
+        public static final int btnModificarLibro=0x7f040004;
+        public static final int btnOK=0x7f040005;
+        public static final int calendar=0x7f040006;
+        public static final int tagAno=0x7f040007;
+        public static final int tagAutores=0x7f040008;
+        public static final int tagEditorial=0x7f040009;
+        public static final int tagFinPrestamo=0x7f04000a;
+        public static final int tagISBN=0x7f04000b;
+        public static final int tagLugarPrestamo=0x7f04000c;
+        public static final int tagTitulo=0x7f04000d;
     }
 }

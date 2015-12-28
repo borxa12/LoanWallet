@@ -22,8 +22,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="es.uvigo.esei.dm1516.p24.AddLoan"
-            android:label="New Loan" >
+            android:name="es.uvigo.esei.dm1516.p24.AddPrestamoLibro"
+            android:label="Nuevo Préstamo: Libro" >
+        </activity>
+        <activity
+            android:name="es.uvigo.esei.dm1516.p24.ModificarPrestamoLibro"
+            android:label="Modificar Préstamo: Libro" >
         </activity>
     </application>
 

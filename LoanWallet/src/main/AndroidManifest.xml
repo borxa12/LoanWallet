@@ -14,8 +14,11 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name="AddLoan"
-                  android:label="New Loan">
+        <activity android:name=".AddPrestamoLibro"
+                  android:label="Nuevo Préstamo: Libro">
+        </activity>
+        <activity android:name=".ModificarPrestamoLibro"
+                  android:label="Modificar Préstamo: Libro">
         </activity>
     </application>
 </manifest>

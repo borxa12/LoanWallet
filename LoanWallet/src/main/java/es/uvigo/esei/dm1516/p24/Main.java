@@ -14,11 +14,9 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
-import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import java.net.DatagramPacket;
 import java.util.ArrayList;
 import java.util.Calendar;
 
@@ -48,7 +46,7 @@ public class Main extends Activity {
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Main.this,AddLoan.class);
+                Intent intent = new Intent(Main.this,AddPrestamoLibro.class);
                 Main.this.startActivity(intent);
             }
         });
@@ -94,7 +92,7 @@ public class Main extends Activity {
                 if (which == 0) {
                     Main.this.renovar(pos);
                 } else if (which == 1) {
-                    //Main.this.modificar(pos);
+                    Main.this.modificar(pos);
                 } else if (which == 2) {
                     Main.this.eliminar(pos);
                 }
@@ -103,24 +101,21 @@ public class Main extends Activity {
         alert.create().show();
     }
 
-    private int ano;
-    private int mes;
-    private int dia;
-
     private void renovar(final int pos) {
-        final Libro libro = Main.this.items.get(pos);
-
+        final Calendar calendar = Calendar.getInstance();
         DatePickerDialog dialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
             @Override
             public void onDateSet(DatePicker view, int year, int month, int day) {
-                Main.this.ano = 2017;
-                Main.this.mes = 11;
-                Main.this.dia = 11;
+                StringBuilder fecha = new StringBuilder();
+                fecha.append(String.valueOf(year)).append("-").append(String.valueOf(month + 1)).append("-").append(String.valueOf(day));
+                Main.this.renovacion(pos,fecha.toString());
             }
-        }, Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH);
+        }, calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH));
         dialog.show();
+    }
 
-        String fecha = String.valueOf(Main.this.ano) + "-" + String.valueOf(Main.this.mes) + "-" + String.valueOf(Main.this.dia);
+    public void renovacion(int pos, String fecha) {
+        final Libro libro = Main.this.items.get(pos);
         int renovaciones = libro.getRenovaciones() + 1;
 
         LoanWalletSQL sqlDB = new LoanWalletSQL(this);
@@ -132,10 +127,9 @@ public class Main extends Activity {
                 db.execSQL("UPDATE libros SET renovaciones = ?, finPrestamo = ? WHERE ISBN = ?;",
                         new String[]{String.valueOf(renovaciones), fecha, libro.getISBN()});
                 db.setTransactionSuccessful();
-                libro.setFinPrestamo(fecha);
+                libro.setFinPrestamo(fecha.toString());
                 libro.setRenovaciones(renovaciones);
-                //Main.this.itemsAdapter.getItem(pos).setFinPrestamo(fecha);
-                //Main.this.itemsAdapter.getItem(pos).setRenovaciones(renovaciones);
+                Main.this.itemsAdapter.notifyDataSetChanged();
             } finally {
                 db.endTransaction();
             }
@@ -144,17 +138,24 @@ public class Main extends Activity {
         }
     }
 
+    private void modificar(int pos) {
+        Intent intent = new Intent(Main.this,ModificarPrestamoLibro.class);
+        intent.putExtra("posicion",pos);
+        Main.this.startActivity(intent);
+    }
+
     private void eliminar(final int pos) {
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
         alert.setTitle("Eliminar Préstamo");
         alert.setMessage("¿Estás seguro?");
-        alert.setPositiveButton("Delete", new DialogInterface.OnClickListener() {
+        alert.setPositiveButton("Eliminar", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 Main.this.eliminacion(pos);
+                Main.this.itemsAdapter.notifyDataSetChanged();
             }
         });
-        alert.setNegativeButton("Cancel", null);
+        alert.setNegativeButton("Cancelar", null);
         alert.create().show();
     }
 
@@ -171,7 +172,7 @@ public class Main extends Activity {
                         new String[]{libro.getISBN()});
                 db.setTransactionSuccessful();
                 Main.this.items.remove(pos);
-                //Main.this.itemsAdapter.getItem(pos).setRenovaciones(renovaciones);
+                Main.this.itemsAdapter.notifyDataSetChanged();
             } finally {
                 db.endTransaction();
             }

@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Borxa\Documents\GitHub\LoanWallet\LoanWallet\src\main\AndroidManifest.xml:2:1-21:12
+ADDED from C:\Users\Borxa\Documents\GitHub\LoanWallet\LoanWallet\src\main\AndroidManifest.xml:2:1-24:12
 	package
 		ADDED from C:\Users\Borxa\Documents\GitHub\LoanWallet\LoanWallet\src\main\AndroidManifest.xml:3:11-45
 		INJECTED from C:\Users\Borxa\Documents\GitHub\LoanWallet\LoanWallet\src\main\AndroidManifest.xml
@@ -25,7 +25,7 @@ ADDED from C:\Users\Borxa\Documents\GitHub\LoanWallet\LoanWallet\src\main\Androi
 		INJECTED from C:\Users\Borxa\Documents\GitHub\LoanWallet\LoanWallet\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Borxa\Documents\GitHub\LoanWallet\LoanWallet\src\main\AndroidManifest.xml
 application
-ADDED from C:\Users\Borxa\Documents\GitHub\LoanWallet\LoanWallet\src\main\AndroidManifest.xml:7:5-20:19
+ADDED from C:\Users\Borxa\Documents\GitHub\LoanWallet\LoanWallet\src\main\AndroidManifest.xml:7:5-23:19
 	android:label
 		ADDED from C:\Users\Borxa\Documents\GitHub\LoanWallet\LoanWallet\src\main\AndroidManifest.xml:7:18-50
 	android:icon
@@ -48,9 +48,15 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\Borxa\Documents\GitHub\LoanWallet\LoanWallet\src\main\AndroidManifest.xml:14:17-76
 	android:name
 		ADDED from C:\Users\Borxa\Documents\GitHub\LoanWallet\LoanWallet\src\main\AndroidManifest.xml:14:27-74
-activity#es.uvigo.esei.dm1516.p24.AddLoan
+activity#es.uvigo.esei.dm1516.p24.AddPrestamoLibro
 ADDED from C:\Users\Borxa\Documents\GitHub\LoanWallet\LoanWallet\src\main\AndroidManifest.xml:17:9-19:20
 	android:label
-		ADDED from C:\Users\Borxa\Documents\GitHub\LoanWallet\LoanWallet\src\main\AndroidManifest.xml:18:19-43
+		ADDED from C:\Users\Borxa\Documents\GitHub\LoanWallet\LoanWallet\src\main\AndroidManifest.xml:18:19-56
 	android:name
-		ADDED from C:\Users\Borxa\Documents\GitHub\LoanWallet\LoanWallet\src\main\AndroidManifest.xml:17:19-41
+		ADDED from C:\Users\Borxa\Documents\GitHub\LoanWallet\LoanWallet\src\main\AndroidManifest.xml:17:19-51
+activity#es.uvigo.esei.dm1516.p24.ModificarPrestamoLibro
+ADDED from C:\Users\Borxa\Documents\GitHub\LoanWallet\LoanWallet\src\main\AndroidManifest.xml:20:9-22:20
+	android:label
+		ADDED from C:\Users\Borxa\Documents\GitHub\LoanWallet\LoanWallet\src\main\AndroidManifest.xml:21:19-60
+	android:name
+		ADDED from C:\Users\Borxa\Documents\GitHub\LoanWallet\LoanWallet\src\main\AndroidManifest.xml:20:19-57

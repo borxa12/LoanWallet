@@ -4,6 +4,7 @@
     <string name="app_name">LoanWallet</string>
     <string name="btnAddLibro">Añadir Libro</string>
     <string name="btnCancel">Cancelar</string>
+    <string name="btnModificarLibro">Modificar Libro</string>
     <string name="btnOK">Aceptar</string>
     <string name="calendar">calendar</string>
     <string name="tagAno">Año:</string>

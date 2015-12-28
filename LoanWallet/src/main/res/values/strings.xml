@@ -12,5 +12,6 @@
     <string name="btnCancel">Cancelar</string>
     <string name="btnOK">Aceptar</string>
     <string name="btnAddLibro">Añadir Libro</string>
+    <string name="btnModificarLibro">Modificar Libro</string>
     <string name="calendar">calendar</string>
 </resources>
