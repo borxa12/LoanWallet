@@ -4,12 +4,16 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.database.sqlite.SQLiteDatabase;
-import android.media.Image;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.*;
-import org.w3c.dom.Text;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
 
 /**
  * Created by Borxa on 17/11/2015.
@@ -31,7 +35,7 @@ public class AddLoan extends Activity {
         });
 
         ImageButton btnCalendar = (ImageButton) this.findViewById(R.id.calendar);
-        final EditText lblEndLoan =(EditText) this.findViewById(R.id.labelFinPrestamo);
+        final EditText labelFinPrestamo =(EditText) this.findViewById(R.id.labelFinPrestamo);
         btnCalendar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -44,7 +48,7 @@ public class AddLoan extends Activity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         DatePicker calendar = (DatePicker) dialoglayout.findViewById(R.id.datePicker);
-                        lblEndLoan.setText(calendar.getDayOfMonth() + "/" + (calendar.getMonth()+ 1) + "/" + calendar.getYear());
+                        labelFinPrestamo.setText(calendar.getYear() + "-" + (calendar.getMonth()+ 1) + "-" + calendar.getDayOfMonth());
                     }
                 });
                 alert.setNegativeButton("Cancel",null);
@@ -54,19 +58,36 @@ public class AddLoan extends Activity {
     }
 
     public void addLoan() {
+        EditText labelISBN = (EditText) this.findViewById(R.id.labelISBN);
         AutoCompleteTextView labelTitulo = (AutoCompleteTextView) this.findViewById(R.id.labelTitulo);
         AutoCompleteTextView labelAutores = (AutoCompleteTextView) this.findViewById(R.id.labelAutores);
         EditText labelAno = (EditText) this.findViewById(R.id.labelAno);
+        EditText labelEditorial = (EditText) this.findViewById(R.id.labelEditorial);
         EditText labelFinPrestamo = (EditText) this.findViewById(R.id.labelFinPrestamo);
         EditText labelLugarPrestamo = (EditText) this.findViewById(R.id.labelLugarPrestamo);
-        ImageButton btnCalendar = (ImageButton) this.findViewById(R.id.calendar);
 
-        LoanWalletSQL sqlDB = ((App) this.getApplication()).getDb();
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        String fecha = sdf.format(new Date());
+
+        LoanWalletSQL sqlDB = new LoanWalletSQL(this);
         SQLiteDatabase db = sqlDB.getWritableDatabase();
 
-        db.execSQL("INSERT OR");
-        INSERT INTO `loanwallet`.`libro` (`id`, `ISBN`, `titulo`, `autores`, `ano`, `editorial`, `renovaciones`,
-        `fechaPrestamo`, `finPrestamo`, `lugarPrestamo`) VALUES (NULL, '20325-3545-6536-5445', 'Titulo', 'Algún habra',
-                '1995', 'Anaya', '0', CURRENT_DATE(), CURRENT_DATE(), 'Arbo');
+        if(db != null) {
+            try {
+                db.beginTransaction();
+                db.execSQL("INSERT OR IGNORE INTO libros(ISBN,titulo,autores,ano,editorial,renovaciones,fechaPrestamo,finPrestamo,lugarPrestamo)" +
+                        "VALUES(?,?,?,?,?,0,?,?,?)", new String[]{labelISBN.getText().toString(), labelTitulo.getText().toString(),
+                        labelAutores.getText().toString(), labelAno.getText().toString(), labelEditorial.getText().toString(),
+                        fecha, labelFinPrestamo.getText().toString(), labelLugarPrestamo.getText().toString()});
+                db.setTransactionSuccessful();
+                Toast.makeText(this.getApplicationContext(),"El préstamo se ha insertado satisfactoriamente", Toast.LENGTH_LONG).show();
+            } finally {
+                db.endTransaction();
+            }
+        } else {
+            Toast.makeText(this.getApplicationContext(),"No se ha podida insetar el préstamo", Toast.LENGTH_LONG).show();
+        }
+
+        this.finish();
     }
 }

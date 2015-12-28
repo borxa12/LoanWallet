@@ -21,8 +21,7 @@ public class LoanWalletSQL extends SQLiteOpenHelper {
         db.beginTransaction();
         try {
             db.execSQL("CREATE TABLE IF NOT EXISTS libros (" +
-                            "id INT NOT NULL AUTO_INCREMENT PRIMARY KEY," +
-                            "ISBN VARCHAR(20) NOT NULL," +
+                            "ISBN VARCHAR(20) NOT NULL PRIMARY KEY," +
                             "titulo VARCHAR(200) NOT NULL," +
                             "autores VARCHAR(200) NULL," +
                             "ano INT(4) NULL," +
@@ -30,7 +29,7 @@ public class LoanWalletSQL extends SQLiteOpenHelper {
                             "renovaciones INT NULL DEFAULT 0," +
                             "fechaPrestamo DATETIME NULL," +
                             "finPrestamo DATETIME NULL," +
-                            "lugarPrestamo VARCHAR(80) NULL," +
+                            "lugarPrestamo VARCHAR(80) NULL" +
                             ")");
             db.setTransactionSuccessful();
         } finally {

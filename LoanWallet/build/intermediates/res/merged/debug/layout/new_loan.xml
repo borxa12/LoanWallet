@@ -38,11 +38,11 @@
             android:layout_gravity="center"
             android:layout_margin="5dp" >
 
-            <AutoCompleteTextView
+            <EditText
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/labelISBN"
-                android:maxLength="20" />
+                android:inputType="text" />
         </LinearLayout>
     </LinearLayout>
 
@@ -73,7 +73,8 @@
             <AutoCompleteTextView
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/labelTitulo"/>
+                    android:id="@+id/labelTitulo"
+                android:maxLength="200" />
         </LinearLayout>
     </LinearLayout>
     <LinearLayout android:orientation="horizontal"
@@ -102,7 +103,8 @@
             <MultiAutoCompleteTextView
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/labelAutores"/>
+                    android:id="@+id/labelAutores"
+                android:maxLength="200" />
         </LinearLayout>
     </LinearLayout>
     <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
@@ -158,10 +160,10 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/labelEditorial"
-                android:inputType="number"
                 android:layout_gravity="center"
                 android:numeric="integer"
-                android:maxLength="4" />
+                android:maxLength="50"
+                android:inputType="text" />
         </LinearLayout>
     </LinearLayout>
 
@@ -204,7 +206,8 @@
                   android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                   android:textIsSelectable="false" android:textSize="20sp"/>
         <EditText android:layout_width="fill_parent" android:layout_height="wrap_content"
-                  android:ems="10" android:id="@+id/labelLugarPrestamo" android:clickable="true" android:inputType="text"/>
+                  android:ems="10" android:id="@+id/labelLugarPrestamo" android:clickable="true" android:inputType="text"
+            android:maxLength="80" />
     </LinearLayout>
     <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
                   android:layout_height="wrap_content" android:paddingLeft="10dp" android:paddingRight="10dp"

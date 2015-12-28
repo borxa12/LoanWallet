@@ -38,11 +38,11 @@
             android:layout_gravity="center"
             android:layout_margin="5dp" >
 
-            <AutoCompleteTextView
+            <EditText
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/labelISBN"
-                android:maxLength="20" />
+                android:inputType="text" />
         </LinearLayout>
     </LinearLayout>
 
@@ -160,10 +160,10 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/labelEditorial"
-                android:inputType="number"
                 android:layout_gravity="center"
                 android:numeric="integer"
-                android:maxLength="50" />
+                android:maxLength="50"
+                android:inputType="text" />
         </LinearLayout>
     </LinearLayout>
 

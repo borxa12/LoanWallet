@@ -20,6 +20,7 @@ public class Libro {
 
     public Libro(String ISBN, String titulo, String autores, int ano, String editorial, int renovaciones,
                 GregorianCalendar fechaPrestamo, GregorianCalendar finPrestamo, String lugarPrestamo) {
+        this.ISBN = ISBN;
         this.titulo = titulo;
         this.autores = autores;
         this.ano = ano;
