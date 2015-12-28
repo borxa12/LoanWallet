@@ -12,23 +12,24 @@ public final class R {
     }
     public static final class id {
         public static final int AddLoan=0x7f050002;
-        public static final int btnAddLoan=0x7f050011;
-        public static final int calendar=0x7f05000e;
+        public static final int btnAddLibro=0x7f050012;
+        public static final int calendar=0x7f05000f;
         public static final int datePicker=0x7f050000;
-        public static final int lblAuthors=0x7f050006;
-        public static final int lblDescription=0x7f05000b;
-        public static final int lblEndLoan=0x7f05000d;
-        public static final int lblLender=0x7f050010;
-        public static final int lblTitle=0x7f050004;
-        public static final int lblYear=0x7f050008;
+        public static final int labelAno=0x7f05000a;
+        public static final int labelAutores=0x7f050008;
+        public static final int labelEditorial=0x7f05000c;
+        public static final int labelFinPrestamo=0x7f05000e;
+        public static final int labelISBN=0x7f050004;
+        public static final int labelLugarPrestamo=0x7f050011;
+        public static final int labelTitulo=0x7f050006;
         public static final int listView=0x7f050001;
-        public static final int scrollView=0x7f05000a;
-        public static final int tagAuthor=0x7f050005;
-        public static final int tagDescription=0x7f050009;
-        public static final int tagEndLoan=0x7f05000c;
-        public static final int tagLender=0x7f05000f;
-        public static final int tagTitle=0x7f050003;
-        public static final int tagYear=0x7f050007;
+        public static final int tagAno=0x7f050009;
+        public static final int tagAutores=0x7f050007;
+        public static final int tagEditorial=0x7f05000b;
+        public static final int tagFinPrestamo=0x7f05000d;
+        public static final int tagISBN=0x7f050003;
+        public static final int tagLugarPrestamo=0x7f050010;
+        public static final int tagTitulo=0x7f050005;
     }
     public static final class layout {
         public static final int calendar=0x7f030000;
@@ -42,15 +43,16 @@ public final class R {
     public static final class string {
         public static final int AddLoan=0x7f040000;
         public static final int app_name=0x7f040001;
-        public static final int btnAddLoan=0x7f040002;
+        public static final int btnAddLibro=0x7f040002;
         public static final int btnCancel=0x7f040003;
         public static final int btnOK=0x7f040004;
         public static final int calendar=0x7f040005;
-        public static final int tagAuthor=0x7f040006;
-        public static final int tagDescription=0x7f040007;
-        public static final int tagEndLoan=0x7f040008;
-        public static final int tagLender=0x7f040009;
-        public static final int tagTitle=0x7f04000a;
-        public static final int tagYear=0x7f04000b;
+        public static final int tagAno=0x7f040006;
+        public static final int tagAutores=0x7f040007;
+        public static final int tagEditorial=0x7f040008;
+        public static final int tagFinPrestamo=0x7f040009;
+        public static final int tagISBN=0x7f04000a;
+        public static final int tagLugarPrestamo=0x7f04000b;
+        public static final int tagTitulo=0x7f04000c;
     }
 }

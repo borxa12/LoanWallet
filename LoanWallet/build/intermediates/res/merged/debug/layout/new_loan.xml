@@ -7,6 +7,46 @@
               android:paddingBottom="10dp">
 
     <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:layout_gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tagISBN"
+                android:id="@+id/tagISBN"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:layout_gravity="center"
+            android:layout_margin="5dp" >
+
+            <AutoCompleteTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/labelISBN"
+                android:maxLength="20" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:baselineAligned="false"
@@ -18,8 +58,8 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/tagTitle"
-                    android:id="@+id/tagTitle"
+                    android:text="@string/tagTitulo"
+                    android:id="@+id/tagTitulo"
                     android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                     android:textSize="20sp"/>
         </LinearLayout>
@@ -33,7 +73,7 @@
             <AutoCompleteTextView
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/lblTitle"/>
+                    android:id="@+id/labelTitulo"/>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout android:orientation="horizontal"
@@ -45,24 +85,24 @@
         <LinearLayout android:orientation="horizontal"
                       android:layout_width="match_parent"
                       android:layout_height="wrap_content"
-                      android:layout_weight="0.7"
+                      android:layout_weight="0.8"
                       android:layout_gravity="center">
             <TextView android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
-                      android:text="@string/tagAuthor"
-                      android:id="@+id/tagAuthor"
+                      android:text="@string/tagAutores"
+                      android:id="@+id/tagAutores"
                       android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                       android:textSize="20sp"/>
         </LinearLayout>
         <LinearLayout android:orientation="horizontal"
                       android:layout_width="match_parent"
                       android:layout_height="wrap_content"
-                      android:layout_weight="0.3" android:layout_gravity="center"
+                      android:layout_weight="0.25" android:layout_gravity="center"
         >
             <MultiAutoCompleteTextView
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/lblAuthors"/>
+                    android:id="@+id/labelAutores"/>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
@@ -71,53 +111,67 @@
         <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
                       android:layout_height="wrap_content" android:layout_weight="0.8" android:layout_gravity="center">
             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                      android:text="@string/tagYear" android:id="@+id/tagYear"
+                      android:text="@string/tagAno" android:id="@+id/tagAno"
                       android:textSize="20sp" android:textAppearance="?android:attr/textAppearanceLarge"/>
         </LinearLayout>
         <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
                       android:layout_height="wrap_content" android:layout_weight="0.2" android:layout_gravity="center"
         >
             <EditText android:layout_width="fill_parent" android:layout_height="wrap_content"
-                      android:id="@+id/lblYear" android:inputType="number" android:layout_gravity="center"
+                      android:id="@+id/labelAno" android:inputType="number" android:layout_gravity="center"
                       android:numeric="integer" android:maxLength="4"/>
         </LinearLayout>
     </LinearLayout>
+
     <LinearLayout
-            android:orientation="vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="0dp" android:layout_weight="0.5" android:paddingLeft="10dp"
-            android:paddingRight="10dp" android:paddingTop="5dp">
-        <TextView
+            android:layout_height="wrap_content"
+            android:layout_weight="0.75"
+            android:layout_gravity="center" >
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="@string/tagDescription"
-                android:id="@+id/tagDescription" android:textSize="20sp"/>
-        <ScrollView
+                android:text="@string/tagEditorial"
+                android:id="@+id/tagEditorial"
+                android:textSize="20sp"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:layout_gravity="center" >
+
+            <EditText
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:id="@+id/scrollView"
-                android:fillViewport="true">
-            <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                <EditText
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:id="@+id/lblDescription"
-                        android:inputType="text"
-                        android:enabled="true"/>
-            </LinearLayout>
-        </ScrollView>
+                android:layout_height="wrap_content"
+                android:id="@+id/labelEditorial"
+                android:inputType="number"
+                android:layout_gravity="center"
+                android:numeric="integer"
+                android:maxLength="4" />
+        </LinearLayout>
     </LinearLayout>
+
     <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:paddingLeft="10dp" android:paddingRight="10dp"
             android:paddingTop="5dp">
         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                  android:text="@string/tagEndLoan" android:id="@+id/tagEndLoan"
+                  android:text="@string/tagFinPrestamo" android:id="@+id/tagFinPrestamo"
                   android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                   android:textSize="20sp"/>
         <LinearLayout
@@ -129,12 +183,12 @@
                     android:layout_height="fill_parent"
                     android:inputType="date"
                     android:ems="10"
-                    android:id="@+id/lblEndLoan"
+                    android:id="@+id/labelFinPrestamo"
                     android:clickable="false"
                     android:cursorVisible="false"
                     android:focusable="false"
                     android:focusableInTouchMode="false"
-                    android:layout_weight="0.6"/>
+                    android:layout_weight="0.6" />
             <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -146,11 +200,11 @@
                   android:layout_height="wrap_content" android:paddingLeft="10dp" android:paddingRight="10dp"
                   android:paddingTop="5dp">
         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                  android:text="@string/tagLender" android:id="@+id/tagLender"
+                  android:text="@string/tagLugarPrestamo" android:id="@+id/tagLugarPrestamo"
                   android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                   android:textIsSelectable="false" android:textSize="20sp"/>
         <EditText android:layout_width="fill_parent" android:layout_height="wrap_content"
-                  android:ems="10" android:id="@+id/lblLender" android:clickable="true" android:inputType="text"/>
+                  android:ems="10" android:id="@+id/labelLugarPrestamo" android:clickable="true" android:inputType="text"/>
     </LinearLayout>
     <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
                   android:layout_height="wrap_content" android:paddingLeft="10dp" android:paddingRight="10dp"
@@ -158,7 +212,8 @@
         <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/btnAddLoan"
-                android:id="@+id/btnAddLoan" android:layout_gravity="center"/>
+                android:text="@string/btnAddLibro"
+                android:id="@+id/btnAddLibro" android:layout_gravity="center"/>
     </LinearLayout>
+
 </LinearLayout>

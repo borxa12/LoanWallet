@@ -11,14 +11,7 @@
                     "endOffset": 88
                 },
                 "from": {
-                    "file": "C:\\Users\\Borxa\\Documents\\GitHub\\LoanWallet\\LoanWallet\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 106,
-                        "endColumn": 37,
-                        "endOffset": 139
-                    }
+                    "file": "C:\\Users\\Borxa\\Documents\\GitHub\\LoanWallet\\LoanWallet\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
@@ -30,14 +23,7 @@
                     "endOffset": 136
                 },
                 "from": {
-                    "file": "C:\\Users\\Borxa\\Documents\\GitHub\\LoanWallet\\LoanWallet\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 57,
-                        "endColumn": 47,
-                        "endOffset": 100
-                    }
+                    "file": "C:\\Users\\Borxa\\Documents\\GitHub\\LoanWallet\\LoanWallet\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
@@ -45,17 +31,17 @@
                     "startLine": 4,
                     "startColumn": 4,
                     "startOffset": 141,
-                    "endColumn": 47,
-                    "endOffset": 184
+                    "endColumn": 52,
+                    "endOffset": 189
                 },
                 "from": {
                     "file": "C:\\Users\\Borxa\\Documents\\GitHub\\LoanWallet\\LoanWallet\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 12,
+                        "startLine": 13,
                         "startColumn": 4,
-                        "startOffset": 573,
-                        "endColumn": 47,
-                        "endOffset": 616
+                        "startOffset": 624,
+                        "endColumn": 52,
+                        "endOffset": 672
                     }
                 }
             },
@@ -63,56 +49,42 @@
                 "to": {
                     "startLine": 5,
                     "startColumn": 4,
-                    "startOffset": 189,
+                    "startOffset": 194,
                     "endColumn": 46,
-                    "endOffset": 231
+                    "endOffset": 236
                 },
                 "from": {
-                    "file": "C:\\Users\\Borxa\\Documents\\GitHub\\LoanWallet\\LoanWallet\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 10,
-                        "startColumn": 4,
-                        "startOffset": 482,
-                        "endColumn": 46,
-                        "endOffset": 524
-                    }
+                    "file": "C:\\Users\\Borxa\\Documents\\GitHub\\LoanWallet\\LoanWallet\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 6,
                     "startColumn": 4,
-                    "startOffset": 236,
+                    "startOffset": 241,
                     "endColumn": 41,
-                    "endOffset": 273
+                    "endOffset": 278
                 },
                 "from": {
-                    "file": "C:\\Users\\Borxa\\Documents\\GitHub\\LoanWallet\\LoanWallet\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 11,
-                        "startColumn": 4,
-                        "startOffset": 530,
-                        "endColumn": 41,
-                        "endOffset": 567
-                    }
+                    "file": "C:\\Users\\Borxa\\Documents\\GitHub\\LoanWallet\\LoanWallet\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 7,
                     "startColumn": 4,
-                    "startOffset": 278,
-                    "endColumn": 41,
-                    "endOffset": 315
+                    "startOffset": 283,
+                    "endColumn": 45,
+                    "endOffset": 324
                 },
                 "from": {
                     "file": "C:\\Users\\Borxa\\Documents\\GitHub\\LoanWallet\\LoanWallet\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 13,
+                        "startLine": 14,
                         "startColumn": 4,
-                        "startOffset": 622,
-                        "endColumn": 41,
-                        "endOffset": 659
+                        "startOffset": 678,
+                        "endColumn": 45,
+                        "endOffset": 719
                     }
                 }
             },
@@ -120,18 +92,18 @@
                 "to": {
                     "startLine": 8,
                     "startColumn": 4,
-                    "startOffset": 320,
-                    "endColumn": 46,
-                    "endOffset": 362
+                    "startOffset": 329,
+                    "endColumn": 39,
+                    "endOffset": 364
                 },
                 "from": {
                     "file": "C:\\Users\\Borxa\\Documents\\GitHub\\LoanWallet\\LoanWallet\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 5,
+                        "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 191,
-                        "endColumn": 46,
-                        "endOffset": 233
+                        "startOffset": 284,
+                        "endColumn": 39,
+                        "endOffset": 319
                     }
                 }
             },
@@ -139,18 +111,18 @@
                 "to": {
                     "startLine": 9,
                     "startColumn": 4,
-                    "startOffset": 367,
-                    "endColumn": 55,
-                    "endOffset": 418
+                    "startOffset": 369,
+                    "endColumn": 47,
+                    "endOffset": 412
                 },
                 "from": {
                     "file": "C:\\Users\\Borxa\\Documents\\GitHub\\LoanWallet\\LoanWallet\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 7,
+                        "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 281,
-                        "endColumn": 55,
-                        "endOffset": 332
+                        "startOffset": 235,
+                        "endColumn": 47,
+                        "endOffset": 278
                     }
                 }
             },
@@ -158,18 +130,18 @@
                 "to": {
                     "startLine": 10,
                     "startColumn": 4,
-                    "startOffset": 423,
-                    "endColumn": 74,
-                    "endOffset": 493
+                    "startOffset": 417,
+                    "endColumn": 51,
+                    "endOffset": 464
                 },
                 "from": {
                     "file": "C:\\Users\\Borxa\\Documents\\GitHub\\LoanWallet\\LoanWallet\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 338,
-                        "endColumn": 74,
-                        "endOffset": 408
+                        "startOffset": 325,
+                        "endColumn": 51,
+                        "endOffset": 372
                     }
                 }
             },
@@ -177,18 +149,18 @@
                 "to": {
                     "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 498,
-                    "endColumn": 66,
-                    "endOffset": 560
+                    "startOffset": 469,
+                    "endColumn": 78,
+                    "endOffset": 543
                 },
                 "from": {
                     "file": "C:\\Users\\Borxa\\Documents\\GitHub\\LoanWallet\\LoanWallet\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 414,
-                        "endColumn": 66,
-                        "endOffset": 476
+                        "startOffset": 378,
+                        "endColumn": 78,
+                        "endOffset": 452
                     }
                 }
             },
@@ -196,9 +168,9 @@
                 "to": {
                     "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 565,
-                    "endColumn": 44,
-                    "endOffset": 605
+                    "startOffset": 548,
+                    "endColumn": 41,
+                    "endOffset": 585
                 },
                 "from": {
                     "file": "C:\\Users\\Borxa\\Documents\\GitHub\\LoanWallet\\LoanWallet\\src\\main\\res\\values\\strings.xml",
@@ -206,8 +178,8 @@
                         "startLine": 4,
                         "startColumn": 4,
                         "startOffset": 145,
-                        "endColumn": 44,
-                        "endOffset": 185
+                        "endColumn": 41,
+                        "endOffset": 182
                     }
                 }
             },
@@ -215,18 +187,37 @@
                 "to": {
                     "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 610,
-                    "endColumn": 40,
-                    "endOffset": 646
+                    "startOffset": 590,
+                    "endColumn": 73,
+                    "endOffset": 659
                 },
                 "from": {
                     "file": "C:\\Users\\Borxa\\Documents\\GitHub\\LoanWallet\\LoanWallet\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 6,
+                        "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 239,
-                        "endColumn": 40,
-                        "endOffset": 275
+                        "startOffset": 458,
+                        "endColumn": 73,
+                        "endOffset": 527
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 664,
+                    "endColumn": 45,
+                    "endOffset": 705
+                },
+                "from": {
+                    "file": "C:\\Users\\Borxa\\Documents\\GitHub\\LoanWallet\\LoanWallet\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 188,
+                        "endColumn": 45,
+                        "endOffset": 229
                     }
                 }
             }

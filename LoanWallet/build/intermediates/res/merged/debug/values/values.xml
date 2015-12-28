@@ -2,14 +2,15 @@
 <resources>
     <string name="AddLoan">+</string>
     <string name="app_name">LoanWallet</string>
-    <string name="btnAddLoan">Add Loan</string>
+    <string name="btnAddLibro">Añadir Libro</string>
     <string name="btnCancel">Cancelar</string>
     <string name="btnOK">Aceptar</string>
-    <string name="calendar">date</string>
-    <string name="tagAuthor">Autores:</string>
-    <string name="tagDescription">Descripción:</string>
-    <string name="tagEndLoan">Fecha de Finalización del Préstamo:</string>
-    <string name="tagLender">Establecimiento Prestamista:</string>
-    <string name="tagTitle">Título:</string>
-    <string name="tagYear">Año:</string>
+    <string name="calendar">calendar</string>
+    <string name="tagAno">Año:</string>
+    <string name="tagAutores">Autores:</string>
+    <string name="tagEditorial">Editorial:</string>
+    <string name="tagFinPrestamo">Fecha de Finalización del Préstamo:</string>
+    <string name="tagISBN">ISBN:</string>
+    <string name="tagLugarPrestamo">Establecimiento Prestamista:</string>
+    <string name="tagTitulo">Título:</string>
 </resources>

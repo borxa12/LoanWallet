@@ -3,6 +3,7 @@ package es.uvigo.esei.dm1516.p24;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.database.sqlite.SQLiteDatabase;
 import android.media.Image;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -20,7 +21,7 @@ public class AddLoan extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.new_loan);
 
-        Button btnAddLoan = (Button) this.findViewById(R.id.btnAddLoan);
+        Button btnAddLoan = (Button) this.findViewById(R.id.btnAddLibro);
 
         btnAddLoan.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,12 +31,12 @@ public class AddLoan extends Activity {
         });
 
         ImageButton btnCalendar = (ImageButton) this.findViewById(R.id.calendar);
-        EditText lblEndLoan =(EditText) this.findViewById(R.id.lblEndLoan);
+        final EditText lblEndLoan =(EditText) this.findViewById(R.id.labelFinPrestamo);
         btnCalendar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 LayoutInflater inflater = AddLoan.this.getLayoutInflater();
-                View dialoglayout = inflater.inflate(R.layout.calendar, null);
+                final View dialoglayout = inflater.inflate(R.layout.calendar, null);
 
                 AlertDialog.Builder alert = new AlertDialog.Builder(AddLoan.this);
                 alert.setView(dialoglayout);
@@ -53,14 +54,19 @@ public class AddLoan extends Activity {
     }
 
     public void addLoan() {
-        AutoCompleteTextView lblTitle = (AutoCompleteTextView) this.findViewById(R.id.lblTitle);
-        AutoCompleteTextView lblAutor = (AutoCompleteTextView) this.findViewById(R.id.lblAuthors);
-        EditText lblYear = (EditText) this.findViewById(R.id.lblYear);
-        EditText lblDescription = (EditText) this.findViewById(R.id.lblDescription);
-        EditText lblEndLoan =(EditText) this.findViewById(R.id.lblEndLoan);
-        EditText lblLender = (EditText) this.findViewById(R.id.lblLender);
+        AutoCompleteTextView labelTitulo = (AutoCompleteTextView) this.findViewById(R.id.labelTitulo);
+        AutoCompleteTextView labelAutores = (AutoCompleteTextView) this.findViewById(R.id.labelAutores);
+        EditText labelAno = (EditText) this.findViewById(R.id.labelAno);
+        EditText labelFinPrestamo = (EditText) this.findViewById(R.id.labelFinPrestamo);
+        EditText labelLugarPrestamo = (EditText) this.findViewById(R.id.labelLugarPrestamo);
         ImageButton btnCalendar = (ImageButton) this.findViewById(R.id.calendar);
 
+        LoanWalletSQL sqlDB = ((App) this.getApplication()).getDb();
+        SQLiteDatabase db = sqlDB.getWritableDatabase();
 
+        db.execSQL("INSERT OR");
+        INSERT INTO `loanwallet`.`libro` (`id`, `ISBN`, `titulo`, `autores`, `ano`, `editorial`, `renovaciones`,
+        `fechaPrestamo`, `finPrestamo`, `lugarPrestamo`) VALUES (NULL, '20325-3545-6536-5445', 'Titulo', 'Algún habra',
+                '1995', 'Anaya', '0', CURRENT_DATE(), CURRENT_DATE(), 'Arbo');
     }
 }

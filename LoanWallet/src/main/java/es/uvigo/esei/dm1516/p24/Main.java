@@ -17,8 +17,8 @@ public class Main extends Activity {
     // API Movies: http://www.omdbapi.com/?t=frozen&y=&plot=short&r=json
     // Documentation API Music (Spotify): https://developer.spotify.com/web-api/search-item/
 
-    private ArrayAdapter<Book> itemsAdapter;
-    private ArrayList<Book> items;
+    private ArrayAdapter<Libro> itemsAdapter;
+    private ArrayList<Libro> items;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
