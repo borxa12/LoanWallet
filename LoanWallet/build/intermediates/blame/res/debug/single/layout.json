@@ -8,6 +8,10 @@
         "source": "C:\\Users\\Borxa\\Documents\\AndroidStudioProjects\\LoanWallet\\LoanWallet\\src\\main\\res\\layout\\main.xml"
     },
     {
+        "merged": "C:\\Users\\Borxa\\Documents\\GitHub\\LoanWallet\\LoanWallet\\build\\intermediates\\res\\merged\\debug\\layout\\prestamos_peliculas.xml",
+        "source": "C:\\Users\\Borxa\\Documents\\GitHub\\LoanWallet\\LoanWallet\\src\\main\\res\\layout\\prestamos_peliculas.xml"
+    },
+    {
         "merged": "C:\\Users\\Borxa\\Documents\\AndroidStudioProjects\\LoanWallet\\LoanWallet\\build\\intermediates\\res\\merged\\debug\\layout\\new_loan.xml",
         "source": "C:\\Users\\Borxa\\Documents\\AndroidStudioProjects\\LoanWallet\\LoanWallet\\src\\main\\res\\layout\\new_loan.xml"
     },
@@ -20,6 +24,10 @@
         "source": "C:\\Users\\Borxa\\Documents\\AndroidStudioProjects\\LoanWallet\\app\\src\\main\\res\\layout\\new_loan.xml"
     },
     {
+        "merged": "C:\\Users\\Borxa\\Documents\\GitHub\\LoanWallet\\LoanWallet\\build\\intermediates\\res\\merged\\debug\\layout\\nuevo_prestamo_pelicula.xml",
+        "source": "C:\\Users\\Borxa\\Documents\\GitHub\\LoanWallet\\LoanWallet\\src\\main\\res\\layout\\nuevo_prestamo_pelicula.xml"
+    },
+    {
         "merged": "C:\\Users\\Borxa\\Documents\\GitHub\\LoanWallet\\LoanWallet\\build\\intermediates\\res\\merged\\debug\\layout\\modificar_prestamo_libro.xml",
         "source": "C:\\Users\\Borxa\\Documents\\GitHub\\LoanWallet\\LoanWallet\\src\\main\\res\\layout\\modificar_prestamo_libro.xml"
     },
@@ -30,6 +38,14 @@
     {
         "merged": "C:\\Users\\Borxa\\Documents\\GitHub\\LoanWallet\\LoanWallet\\build\\intermediates\\res\\merged\\debug\\layout\\calendar.xml",
         "source": "C:\\Users\\Borxa\\Documents\\GitHub\\LoanWallet\\LoanWallet\\src\\main\\res\\layout\\calendar.xml"
+    },
+    {
+        "merged": "C:\\Users\\Borxa\\Documents\\GitHub\\LoanWallet\\LoanWallet\\build\\intermediates\\res\\merged\\debug\\layout\\modificar_prestamo_pelicula.xml",
+        "source": "C:\\Users\\Borxa\\Documents\\GitHub\\LoanWallet\\LoanWallet\\src\\main\\res\\layout\\modificar_prestamo_pelicula.xml"
+    },
+    {
+        "merged": "C:\\Users\\Borxa\\Documents\\GitHub\\LoanWallet\\LoanWallet\\build\\intermediates\\res\\merged\\debug\\layout\\prestamos_libros.xml",
+        "source": "C:\\Users\\Borxa\\Documents\\GitHub\\LoanWallet\\LoanWallet\\src\\main\\res\\layout\\prestamos_libros.xml"
     },
     {
         "merged": "C:\\Users\\Borxa\\Documents\\AndroidStudioProjects\\LoanWallet\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",

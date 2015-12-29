@@ -31,7 +31,7 @@ public class ModificarPrestamoLibro extends Activity {
         final EditText labelFinPrestamo = (EditText) this.findViewById(R.id.labelFinPrestamo);
         EditText labelLugarPrestamo = (EditText) this.findViewById(R.id.labelLugarPrestamo);
 
-        final Libro libro = ((App) this.getApplication()).getItems().get((int) this.getIntent().getExtras().get("posicion"));
+        final Pelicula libro = ((App) this.getApplication()).getLibros().get((int) this.getIntent().getExtras().get("posicion"));
 
         labelISBN.setText(libro.getISBN());
         labelTitulo.setText(libro.getTitulo());
@@ -93,14 +93,14 @@ public class ModificarPrestamoLibro extends Activity {
                                 labelFinPrestamo.getText().toString(), labelLugarPrestamo.getText().toString(),
                                 libro.getISBN().toString()});
                 db.setTransactionSuccessful();
-                ((App) this.getApplication()).getItems().get((int) this.getIntent().getExtras().get("posicion")).setISBN(labelISBN.getText().toString());
-                ((App) this.getApplication()).getItems().get((int) this.getIntent().getExtras().get("posicion")).setTitulo(labelTitulo.getText().toString());
-                ((App) this.getApplication()).getItems().get((int) this.getIntent().getExtras().get("posicion")).setAutores(labelAutores.getText().toString());
-                ((App) this.getApplication()).getItems().get((int) this.getIntent().getExtras().get("posicion")).setAno(Integer.parseInt(labelAno.getText().toString()));
-                ((App) this.getApplication()).getItems().get((int) this.getIntent().getExtras().get("posicion")).setEditorial(labelEditorial.getText().toString());
-                ((App) this.getApplication()).getItems().get((int) this.getIntent().getExtras().get("posicion")).setFinPrestamo(labelFinPrestamo.getText().toString());
-                ((App) this.getApplication()).getItems().get((int) this.getIntent().getExtras().get("posicion")).setLugarPrestamo(labelLugarPrestamo.getText().toString());
-                ((App) this.getApplication()).getItemsAdapter().notifyDataSetChanged();
+                ((App) this.getApplication()).getLibros().get((int) this.getIntent().getExtras().get("posicion")).setISBN(labelISBN.getText().toString());
+                ((App) this.getApplication()).getLibros().get((int) this.getIntent().getExtras().get("posicion")).setTitulo(labelTitulo.getText().toString());
+                ((App) this.getApplication()).getLibros().get((int) this.getIntent().getExtras().get("posicion")).setAutores(labelAutores.getText().toString());
+                ((App) this.getApplication()).getLibros().get((int) this.getIntent().getExtras().get("posicion")).setAno(Integer.parseInt(labelAno.getText().toString()));
+                ((App) this.getApplication()).getLibros().get((int) this.getIntent().getExtras().get("posicion")).setEditorial(labelEditorial.getText().toString());
+                ((App) this.getApplication()).getLibros().get((int) this.getIntent().getExtras().get("posicion")).setFinPrestamo(labelFinPrestamo.getText().toString());
+                ((App) this.getApplication()).getLibros().get((int) this.getIntent().getExtras().get("posicion")).setLugarPrestamo(labelLugarPrestamo.getText().toString());
+                ((App) this.getApplication()).getLibrosAdapter().notifyDataSetChanged();
             } finally {
                 db.endTransaction();
             }

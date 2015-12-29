@@ -22,12 +22,28 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="es.uvigo.esei.dm1516.p24.PrestamosLibros"
+            android:label="Préstamos: Libro" >
+        </activity>
+        <activity
             android:name="es.uvigo.esei.dm1516.p24.AddPrestamoLibro"
             android:label="Nuevo Préstamo: Libro" >
         </activity>
         <activity
             android:name="es.uvigo.esei.dm1516.p24.ModificarPrestamoLibro"
             android:label="Modificar Préstamo: Libro" >
+        </activity>
+        <activity
+            android:name="es.uvigo.esei.dm1516.p24.PrestamosPeliculas"
+            android:label="Préstamos: Peliculas" >
+        </activity>
+        <activity
+            android:name="es.uvigo.esei.dm1516.p24.AddPrestamoPelicula"
+            android:label="Préstamos: Películas" >
+        </activity>
+        <activity
+            android:name="es.uvigo.esei.dm1516.p24.ModificarPrestamoPelicula"
+            android:label="Modificar Préstamo: Películas" >
         </activity>
     </application>
 

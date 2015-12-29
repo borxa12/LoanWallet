@@ -9,27 +9,47 @@ import java.util.ArrayList;
  * Created by Borxa on 28/12/2015.
  */
 public class App extends Application {
-    private ArrayAdapter<Libro> itemsAdapter;
-    private ArrayList<Libro> items;
+
+    private ArrayAdapter<Libro> librosAdapter;
+    private ArrayList<Libro> libros;
+
+    public ArrayAdapter<Pelicula> peliculasAdapter;
+    public ArrayList<Pelicula> peliculas;
 
     @Override
     public void onCreate() {
         super.onCreate();
 
-        this.items = new ArrayList<>();
-        this.itemsAdapter = new ArrayAdapter<Libro>(
+        this.libros = new ArrayList<>();
+        this.librosAdapter = new ArrayAdapter<Libro>(
                 this.getApplicationContext(),
                 android.R.layout.simple_selectable_list_item,
-                this.items
+                this.libros
+        );
+
+        this.peliculas = new ArrayList<>();
+        this.peliculasAdapter = new ArrayAdapter<Pelicula>(
+                this.getApplicationContext(),
+                android.R.layout.simple_selectable_list_item,
+                this.peliculas
+
         );
     }
 
-    public ArrayAdapter<Libro> getItemsAdapter() {
-        return itemsAdapter;
+    public ArrayAdapter<Libro> getLibrosAdapter() {
+        return librosAdapter;
     }
 
-    public ArrayList<Libro> getItems() {
-        return items;
+    public ArrayList<Libro> getLibros() {
+        return libros;
+    }
+
+    public ArrayList<Pelicula> getPeliculas() {
+        return peliculas;
+    }
+
+    public ArrayAdapter<Pelicula> getPeliculasAdapter() {
+        return peliculasAdapter;
     }
 
 }

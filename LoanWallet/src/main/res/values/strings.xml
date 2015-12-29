@@ -9,9 +9,16 @@
     <string name="tagEditorial">Editorial:</string>
     <string name="tagFinPrestamo">Fecha de Finalización del Préstamo:</string>
     <string name="tagLugarPrestamo">Establecimiento Prestamista:</string>
+    <string name="tagDirector">Director:</string>
+    <string name="tagDuracion">Duración:</string>
+    <string name="tagGenero">Genero:</string>
     <string name="btnCancel">Cancelar</string>
     <string name="btnOK">Aceptar</string>
     <string name="btnAddLibro">Añadir Libro</string>
+    <string name="btnAddPelicula">Añadir Pelicula</string>
     <string name="btnModificarLibro">Modificar Libro</string>
+    <string name="btnModificarPelicula">Modificar Película</string>
     <string name="calendar">calendar</string>
+    <string name="btnLibros">Libros</string>
+    <string name="btnPeliculas">Películas</string>
 </resources>

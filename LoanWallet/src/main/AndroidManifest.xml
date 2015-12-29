@@ -7,18 +7,30 @@
     <application android:label="@string/app_name"
                  android:icon="@mipmap/ic_launcher"
                  android:name=".App">
-        <activity android:name="Main"
+        <activity android:name=".Main"
                   android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".PrestamosLibros"
+            android:label="Préstamos: Libro">
+        </activity>
         <activity android:name=".AddPrestamoLibro"
                   android:label="Nuevo Préstamo: Libro">
         </activity>
         <activity android:name=".ModificarPrestamoLibro"
                   android:label="Modificar Préstamo: Libro">
+        </activity>
+        <activity android:name=".PrestamosPeliculas"
+            android:label="Préstamos: Peliculas">
+        </activity>
+        <activity android:name=".AddPrestamoPelicula"
+            android:label="Préstamos: Películas">
+        </activity>
+        <activity android:name=".ModificarPrestamoPelicula"
+            android:label="Modificar Préstamo: Películas">
         </activity>
     </application>
 </manifest>

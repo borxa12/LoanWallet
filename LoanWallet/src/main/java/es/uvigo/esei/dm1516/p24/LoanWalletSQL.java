@@ -22,16 +22,27 @@ public class LoanWalletSQL extends SQLiteOpenHelper {
         db.beginTransaction();
         try {
             db.execSQL("CREATE TABLE IF NOT EXISTS libros (" +
-                            "ISBN VARCHAR(20) NOT NULL PRIMARY KEY," +
-                            "titulo VARCHAR(200) NOT NULL," +
-                            "autores VARCHAR(200) NULL," +
-                            "ano INT(4) NULL," +
-                            "editorial VARCHAR(50) NULL," +
-                            "renovaciones INT NULL DEFAULT 0," +
-                            "fechaPrestamo DATETIME NULL," +
-                            "finPrestamo DATETIME NULL," +
-                            "lugarPrestamo VARCHAR(80) NULL" +
-                            ")");
+                    "ISBN VARCHAR(20) NOT NULL PRIMARY KEY," +
+                    "titulo VARCHAR(200) NOT NULL," +
+                    "autores VARCHAR(200) NULL," +
+                    "ano INT(4) NULL," +
+                    "editorial VARCHAR(50) NULL," +
+                    "renovaciones INT NULL DEFAULT 0," +
+                    "fechaPrestamo DATETIME NULL," +
+                    "finPrestamo DATETIME NULL," +
+                    "lugarPrestamo VARCHAR(80) NULL" +
+                    ")");
+            db.execSQL("CREATE TABLE IF NOT EXISTS peliculas (" +
+                    "titulo VARCHAR(200) NOT NULL PRIMARY KEY," +
+                    "director VARCHAR(200) NULL," +
+                    "ano INT(4) NULL," +
+                    "duracion INT NULL," +
+                    "genero VARCHAR(100) NULL," +
+                    "renovaciones INT NULL DEFAULT 0," +
+                    "fechaPrestamo DATETIME NULL," +
+                    "finPrestamo DATETIME NULL," +
+                    "lugarPrestamo VARCHAR(80) NULL" +
+                    ")");
             db.setTransactionSuccessful();
         } finally {
             db.endTransaction();
@@ -43,6 +54,7 @@ public class LoanWalletSQL extends SQLiteOpenHelper {
         db.beginTransaction();
         try {
             db.execSQL("DROP TABLE IF EXISTS libros");
+            db.execSQL("DROP TABLE IF EXISTS peliculas");
             db.setTransactionSuccessful();
         } finally {
             db.endTransaction();

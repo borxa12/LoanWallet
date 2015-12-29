@@ -81,7 +81,7 @@ public class AddPrestamoLibro extends Activity {
                         labelAutores.getText().toString(), Integer.parseInt(labelAno.getText().toString()),
                         labelEditorial.getText().toString(),0,fecha,
                         labelFinPrestamo.getText().toString(), labelLugarPrestamo.getText().toString());
-                ((App) this.getApplication()).getItemsAdapter().add(libro);
+                ((App) this.getApplication()).getLibrosAdapter().add(libro);
                 Toast.makeText(this.getApplicationContext(),"El préstamo se ha insertado satisfactoriamente", Toast.LENGTH_LONG).show();
             } finally {
                 db.endTransaction();

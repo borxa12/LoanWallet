@@ -36,96 +36,145 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/Main.java">
+      <file leaf-file-name="PrestamosLibros.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/PrestamosLibros.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="94" column="45" selection-start-line="94" selection-start-column="45" selection-end-line="94" selection-end-column="45" />
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding>
+                <element signature="e#1326#1591#0" expanded="true" />
+                <element signature="e#1590#1591#0" expanded="true" />
+                <element signature="e#1725#2051#0" expanded="true" />
+                <element signature="e#2050#2051#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Libro.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/Libro.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="110" column="104" selection-start-line="110" selection-start-column="104" selection-end-line="110" selection-end-column="104" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1591#1834#0" expanded="true" />
-                <element signature="e#1833#1834#0" expanded="true" />
-                <element signature="e#1968#2283#0" expanded="true" />
-                <element signature="e#2282#2283#0" expanded="true" />
-                <element signature="e#3451#3874#0" expanded="true" />
-                <element signature="e#3873#3874#0" expanded="true" />
-                <element signature="e#4076#4504#0" expanded="true" />
-                <element signature="e#4503#4504#0" expanded="true" />
-                <element signature="e#6075#6336#0" expanded="true" />
-                <element signature="e#6335#6336#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="modificar_prestamo_libro.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/res/layout/modificar_prestamo_libro.xml">
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#10503#10530#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nuevo_prestamo_libro.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/res/layout/nuevo_prestamo_libro.xml">
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/res/values/strings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.148148">
-              <caret line="14" column="61" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddPrestamoLibro.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/AddPrestamoLibro.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="82" column="104" selection-start-line="79" selection-start-column="16" selection-end-line="82" selection-end-column="104" />
-              <folding>
-                <element signature="e#733#898#0" expanded="true" />
-                <element signature="e#897#898#0" expanded="true" />
-                <element signature="e#1118#2113#0" expanded="true" />
-                <element signature="e#1565#1990#0" expanded="true" />
-                <element signature="e#1989#1990#0" expanded="true" />
-                <element signature="e#2112#2113#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ModificarPrestamoLibro.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ModificarPrestamoLibro.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/ModificarPrestamoLibro.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="80" column="32" selection-start-line="80" selection-start-column="32" selection-end-line="80" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.331307">
+              <caret line="33" column="28" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1986#2172#0" expanded="true" />
-                <element signature="e#2171#2172#0" expanded="true" />
-                <element signature="e#2297#3304#0" expanded="true" />
-                <element signature="e#2756#3181#0" expanded="true" />
-                <element signature="e#3180#3181#0" expanded="true" />
-                <element signature="e#3303#3304#0" expanded="true" />
+                <element signature="e#2760#3185#0" expanded="true" />
+                <element signature="e#3184#3185#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PrestamosPeliculas.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/PrestamosPeliculas.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding>
+                <element signature="e#1388#1662#0" expanded="true" />
+                <element signature="e#1661#1662#0" expanded="true" />
+                <element signature="e#1812#2141#0" expanded="true" />
+                <element signature="e#2140#2141#0" expanded="true" />
+                <element signature="e#4043#4485#0" expanded="true" />
+                <element signature="e#4484#4485#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
+              <folding>
+                <element signature="e#298#316#0" expanded="true" />
+                <element signature="e#478#496#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ModificarPrestamoPelicula.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/ModificarPrestamoPelicula.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="81" column="100" selection-start-line="81" selection-start-column="100" selection-end-line="81" selection-end-column="100" />
+              <folding>
+                <element signature="e#2127#2319#0" expanded="true" />
+                <element signature="e#2318#2319#0" expanded="true" />
+                <element signature="e#2444#3457#0" expanded="true" />
+                <element signature="e#2909#3334#0" expanded="true" />
+                <element signature="e#3333#3334#0" expanded="true" />
+                <element signature="e#3456#3457#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddPrestamoPelicula.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/AddPrestamoPelicula.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="53" column="21" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+              <folding>
+                <element signature="e#929#1097#0" expanded="true" />
+                <element signature="e#1096#1097#0" expanded="true" />
+                <element signature="e#1325#2326#0" expanded="true" />
+                <element signature="e#1778#2203#0" expanded="true" />
+                <element signature="e#2325#2326#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="modificar_prestamo_pelicula.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/res/layout/modificar_prestamo_pelicula.xml">
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nuevo_prestamo_pelicula.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/res/layout/nuevo_prestamo_pelicula.xml">
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoanWalletSQL.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/LoanWalletSQL.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#443#444#0" expanded="true" />
+                <element signature="e#512#513#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -137,6 +186,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="layoutResourceFile_vertical" />
       </list>
     </option>
   </component>
@@ -1761,19 +1811,27 @@
         <option value="$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/LoanWallwtSQL.java" />
         <option value="$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/Book.java" />
         <option value="$PROJECT_DIR$/LoanWallet/src/main/res/layout/new_loan.xml" />
-        <option value="$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/LoanWalletSQL.java" />
         <option value="$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/Libro.java" />
-        <option value="$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/App.java" />
-        <option value="$PROJECT_DIR$/LoanWallet/src/main/res/layout/main.xml" />
         <option value="$PROJECT_DIR$/LoanWallet/src/main/res/layout/modificar.xml" />
-        <option value="$PROJECT_DIR$/LoanWallet/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/AddLoan.java" />
         <option value="$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/AddPrestamoLibro.java" />
-        <option value="$PROJECT_DIR$/LoanWallet/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/Main.java" />
-        <option value="$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/ModificarPrestamoLibro.java" />
         <option value="$PROJECT_DIR$/LoanWallet/src/main/res/layout/modificar_prestamo_libro.xml" />
         <option value="$PROJECT_DIR$/LoanWallet/src/main/res/layout/nuevo_prestamo_libro.xml" />
+        <option value="$PROJECT_DIR$/LoanWallet/src/main/res/layout/main.xml" />
+        <option value="$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/Main.java" />
+        <option value="$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/App.java" />
+        <option value="$PROJECT_DIR$/LoanWallet/src/main/res/layout/prestamos_peliculas.xml" />
+        <option value="$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/Pelicula.java" />
+        <option value="$PROJECT_DIR$/LoanWallet/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/LoanWallet/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/LoanWalletSQL.java" />
+        <option value="$PROJECT_DIR$/LoanWallet/src/main/res/layout/nuevo_prestamo_pelicula.xml" />
+        <option value="$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/AddPrestamoPelicula.java" />
+        <option value="$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/PrestamosLibros.java" />
+        <option value="$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/PrestamosPeliculas.java" />
+        <option value="$PROJECT_DIR$/LoanWallet/src/main/res/layout/modificar_prestamo_pelicula.xml" />
+        <option value="$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/ModificarPrestamoPelicula.java" />
+        <option value="$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/ModificarPrestamoLibro.java" />
       </list>
     </option>
   </component>
@@ -1809,7 +1867,10 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane" />
+      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1848,10 +1909,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mipmap" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -1906,9 +1963,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1925,6 +1979,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Borxa\Documents\GitHub\LoanWallet\LoanWallet\src\main\res\layout" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="es.uvigo.esei.dm1516.p24" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.LoanWallet-LoanWallet">
@@ -2123,7 +2180,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
@@ -2133,8 +2190,8 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39182281" sideWeight="0.5075643" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39182281" sideWeight="0.4924357" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39182281" sideWeight="0.4924357" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
@@ -2180,22 +2237,78 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/Main.java">
+    <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/PrestamosLibros.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="94" column="45" selection-start-line="94" selection-start-column="45" selection-end-line="94" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1326#1591#0" expanded="true" />
+            <element signature="e#1590#1591#0" expanded="true" />
+            <element signature="e#1725#2051#0" expanded="true" />
+            <element signature="e#2050#2051#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/res/layout/modificar_prestamo_libro.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/res/layout/nuevo_prestamo_libro.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="61" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/AddPrestamoLibro.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="82" column="104" selection-start-line="79" selection-start-column="16" selection-end-line="82" selection-end-column="104" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/ModificarPrestamoLibro.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="80" column="32" selection-start-line="80" selection-start-column="32" selection-end-line="80" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/PrestamosLibros.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1591#1834#0" expanded="true" />
-            <element signature="e#1833#1834#0" expanded="true" />
-            <element signature="e#1968#2283#0" expanded="true" />
-            <element signature="e#2282#2283#0" expanded="true" />
-            <element signature="e#3451#3874#0" expanded="true" />
-            <element signature="e#3873#3874#0" expanded="true" />
-            <element signature="e#4076#4504#0" expanded="true" />
-            <element signature="e#4503#4504#0" expanded="true" />
-            <element signature="e#6075#6336#0" expanded="true" />
-            <element signature="e#6335#6336#0" expanded="true" />
+            <element signature="e#1326#1591#0" expanded="true" />
+            <element signature="e#1590#1591#0" expanded="true" />
+            <element signature="e#1725#2051#0" expanded="true" />
+            <element signature="e#2050#2051#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2206,26 +2319,21 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#298#316#0" expanded="true" />
+            <element signature="e#1052#1079#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/Main.java">
+    <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/PrestamosLibros.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1591#1834#0" expanded="true" />
-            <element signature="e#1833#1834#0" expanded="true" />
-            <element signature="e#1968#2283#0" expanded="true" />
-            <element signature="e#2282#2283#0" expanded="true" />
-            <element signature="e#3451#3874#0" expanded="true" />
-            <element signature="e#3873#3874#0" expanded="true" />
-            <element signature="e#4076#4504#0" expanded="true" />
-            <element signature="e#4503#4504#0" expanded="true" />
-            <element signature="e#6075#6336#0" expanded="true" />
-            <element signature="e#6335#6336#0" expanded="true" />
+            <element signature="e#1326#1591#0" expanded="true" />
+            <element signature="e#1590#1591#0" expanded="true" />
+            <element signature="e#1725#2051#0" expanded="true" />
+            <element signature="e#2050#2051#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2234,26 +2342,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#733#898#0" expanded="true" />
-            <element signature="e#897#898#0" expanded="true" />
-            <element signature="e#1118#2113#0" expanded="true" />
-            <element signature="e#1565#1990#0" expanded="true" />
-            <element signature="e#1989#1990#0" expanded="true" />
-            <element signature="e#2112#2113#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/res/layout/nuevo_prestamo_libro.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/AndroidManifest.xml">
@@ -2262,26 +2363,21 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#298#316#0" expanded="true" />
+            <element signature="e#1052#1079#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/Main.java">
+    <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/PrestamosLibros.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1591#1834#0" expanded="true" />
-            <element signature="e#1833#1834#0" expanded="true" />
-            <element signature="e#1968#2283#0" expanded="true" />
-            <element signature="e#2282#2283#0" expanded="true" />
-            <element signature="e#3451#3874#0" expanded="true" />
-            <element signature="e#3873#3874#0" expanded="true" />
-            <element signature="e#4076#4504#0" expanded="true" />
-            <element signature="e#4503#4504#0" expanded="true" />
-            <element signature="e#6075#6336#0" expanded="true" />
-            <element signature="e#6335#6336#0" expanded="true" />
+            <element signature="e#1326#1591#0" expanded="true" />
+            <element signature="e#1590#1591#0" expanded="true" />
+            <element signature="e#1725#2051#0" expanded="true" />
+            <element signature="e#2050#2051#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2290,26 +2386,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#733#898#0" expanded="true" />
-            <element signature="e#897#898#0" expanded="true" />
-            <element signature="e#1118#2113#0" expanded="true" />
-            <element signature="e#1565#1990#0" expanded="true" />
-            <element signature="e#1989#1990#0" expanded="true" />
-            <element signature="e#2112#2113#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/res/layout/nuevo_prestamo_libro.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/AndroidManifest.xml">
@@ -2318,26 +2407,21 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#298#316#0" expanded="true" />
+            <element signature="e#1052#1079#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/Main.java">
+    <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/PrestamosLibros.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1591#1834#0" expanded="true" />
-            <element signature="e#1833#1834#0" expanded="true" />
-            <element signature="e#1968#2283#0" expanded="true" />
-            <element signature="e#2282#2283#0" expanded="true" />
-            <element signature="e#3451#3874#0" expanded="true" />
-            <element signature="e#3873#3874#0" expanded="true" />
-            <element signature="e#4076#4504#0" expanded="true" />
-            <element signature="e#4503#4504#0" expanded="true" />
-            <element signature="e#6075#6336#0" expanded="true" />
-            <element signature="e#6335#6336#0" expanded="true" />
+            <element signature="e#1326#1591#0" expanded="true" />
+            <element signature="e#1590#1591#0" expanded="true" />
+            <element signature="e#1725#2051#0" expanded="true" />
+            <element signature="e#2050#2051#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2346,26 +2430,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#733#898#0" expanded="true" />
-            <element signature="e#897#898#0" expanded="true" />
-            <element signature="e#1118#2113#0" expanded="true" />
-            <element signature="e#1565#1990#0" expanded="true" />
-            <element signature="e#1989#1990#0" expanded="true" />
-            <element signature="e#2112#2113#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/res/layout/nuevo_prestamo_libro.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/AndroidManifest.xml">
@@ -2374,26 +2451,21 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#298#316#0" expanded="true" />
+            <element signature="e#1052#1079#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/Main.java">
+    <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/PrestamosLibros.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1591#1834#0" expanded="true" />
-            <element signature="e#1833#1834#0" expanded="true" />
-            <element signature="e#1968#2283#0" expanded="true" />
-            <element signature="e#2282#2283#0" expanded="true" />
-            <element signature="e#3451#3874#0" expanded="true" />
-            <element signature="e#3873#3874#0" expanded="true" />
-            <element signature="e#4076#4504#0" expanded="true" />
-            <element signature="e#4503#4504#0" expanded="true" />
-            <element signature="e#6075#6336#0" expanded="true" />
-            <element signature="e#6335#6336#0" expanded="true" />
+            <element signature="e#1326#1591#0" expanded="true" />
+            <element signature="e#1590#1591#0" expanded="true" />
+            <element signature="e#1725#2051#0" expanded="true" />
+            <element signature="e#2050#2051#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2402,26 +2474,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#733#898#0" expanded="true" />
-            <element signature="e#897#898#0" expanded="true" />
-            <element signature="e#1118#2113#0" expanded="true" />
-            <element signature="e#1565#1990#0" expanded="true" />
-            <element signature="e#1989#1990#0" expanded="true" />
-            <element signature="e#2112#2113#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/res/layout/nuevo_prestamo_libro.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/AndroidManifest.xml">
@@ -2430,26 +2495,21 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#298#316#0" expanded="true" />
+            <element signature="e#1052#1079#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/Main.java">
+    <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/PrestamosLibros.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1591#1834#0" expanded="true" />
-            <element signature="e#1833#1834#0" expanded="true" />
-            <element signature="e#1968#2283#0" expanded="true" />
-            <element signature="e#2282#2283#0" expanded="true" />
-            <element signature="e#3451#3874#0" expanded="true" />
-            <element signature="e#3873#3874#0" expanded="true" />
-            <element signature="e#4076#4504#0" expanded="true" />
-            <element signature="e#4503#4504#0" expanded="true" />
-            <element signature="e#6075#6336#0" expanded="true" />
-            <element signature="e#6335#6336#0" expanded="true" />
+            <element signature="e#1326#1591#0" expanded="true" />
+            <element signature="e#1590#1591#0" expanded="true" />
+            <element signature="e#1725#2051#0" expanded="true" />
+            <element signature="e#2050#2051#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2458,26 +2518,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding>
-            <element signature="e#733#898#0" expanded="true" />
-            <element signature="e#897#898#0" expanded="true" />
-            <element signature="e#1118#2113#0" expanded="true" />
-            <element signature="e#1565#1990#0" expanded="true" />
-            <element signature="e#1989#1990#0" expanded="true" />
-            <element signature="e#2112#2113#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/res/layout/nuevo_prestamo_libro.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/res/mipmap-hdpi/ic_launcher.png">
@@ -2485,21 +2538,123 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/res/layout/calendar.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/res/layout/nuevo_prestamo_libro.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/res/layout/main.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/App.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <caret line="46" column="47" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="47" />
+          <folding>
+            <element signature="e#1021#1022#0" expanded="true" />
+            <element signature="e#1057#1058#0" expanded="true" />
+            <element signature="e#1100#1101#0" expanded="true" />
+            <element signature="e#1129#1130#0" expanded="true" />
+            <element signature="e#1210#1211#0" expanded="true" />
+            <element signature="e#1269#1270#0" expanded="true" />
+            <element signature="e#1308#1309#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/LoanWalletSQL.java">
+    <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/AddPrestamoLibro.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="35" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="35" />
+          <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
+          <folding>
+            <element signature="e#733#898#0" expanded="true" />
+            <element signature="e#897#898#0" expanded="true" />
+            <element signature="e#1118#2113#0" expanded="true" />
+            <element signature="e#2112#2113#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/res/layout/modificar_prestamo_libro.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.703704">
+          <caret line="17" column="58" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/res/layout/prestamos_peliculas.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/res/layout/prestamos_libros.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/Pelicula.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="105" column="127" selection-start-line="105" selection-start-column="127" selection-end-line="105" selection-end-column="127" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#443#444#0" expanded="true" />
-            <element signature="e#512#513#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2510,159 +2665,121 @@
           <caret line="110" column="104" selection-start-line="110" selection-start-column="104" selection-end-line="110" selection-end-column="104" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#968#969#0" expanded="true" />
-            <element signature="e#995#996#0" expanded="true" />
-            <element signature="e#1035#1036#0" expanded="true" />
-            <element signature="e#1067#1068#0" expanded="true" />
-            <element signature="e#1100#1101#0" expanded="true" />
-            <element signature="e#1129#1130#0" expanded="true" />
-            <element signature="e#1173#1174#0" expanded="true" />
-            <element signature="e#1209#1210#0" expanded="true" />
-            <element signature="e#1243#1244#0" expanded="true" />
-            <element signature="e#1273#1274#0" expanded="true" />
-            <element signature="e#1319#1320#0" expanded="true" />
-            <element signature="e#1357#1358#0" expanded="true" />
-            <element signature="e#1384#1385#0" expanded="true" />
-            <element signature="e#1410#1411#0" expanded="true" />
-            <element signature="e#1445#1446#0" expanded="true" />
-            <element signature="e#1475#1476#0" expanded="true" />
-            <element signature="e#1511#1512#0" expanded="true" />
-            <element signature="e#1543#1544#0" expanded="true" />
-            <element signature="e#1593#1594#0" expanded="true" />
-            <element signature="e#1635#1636#0" expanded="true" />
-            <element signature="e#1671#1672#0" expanded="true" />
-            <element signature="e#1706#1707#0" expanded="true" />
-            <element signature="e#1759#1760#0" expanded="true" />
-            <element signature="e#1807#1808#0" expanded="true" />
-            <element signature="e#1847#1848#0" expanded="true" />
-            <element signature="e#1883#1884#0" expanded="true" />
-            <element signature="e#1941#1942#0" expanded="true" />
-            <element signature="e#1991#1992#0" expanded="true" />
-            <element signature="e#2029#2030#0" expanded="true" />
-            <element signature="e#2063#2064#0" expanded="true" />
-            <element signature="e#2117#2118#0" expanded="true" />
-            <element signature="e#2163#2164#0" expanded="true" />
-            <element signature="e#2203#2204#0" expanded="true" />
-            <element signature="e#2239#2240#0" expanded="true" />
-            <element signature="e#2297#2298#0" expanded="true" />
-            <element signature="e#2347#2348#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/res/layout/main.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/res/layout/calendar.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/res/values/strings.xml">
+    <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/LoanWalletSQL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.148148">
-          <caret line="14" column="61" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
+            <element signature="e#512#513#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/AddPrestamoPelicula.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="53" column="21" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+          <folding>
+            <element signature="e#929#1097#0" expanded="true" />
+            <element signature="e#1096#1097#0" expanded="true" />
+            <element signature="e#1325#2326#0" expanded="true" />
+            <element signature="e#1778#2203#0" expanded="true" />
+            <element signature="e#2325#2326#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/PrestamosLibros.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="e#1326#1591#0" expanded="true" />
+            <element signature="e#1590#1591#0" expanded="true" />
+            <element signature="e#1725#2051#0" expanded="true" />
+            <element signature="e#2050#2051#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/PrestamosPeliculas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="e#1388#1662#0" expanded="true" />
+            <element signature="e#1661#1662#0" expanded="true" />
+            <element signature="e#1812#2141#0" expanded="true" />
+            <element signature="e#2140#2141#0" expanded="true" />
+            <element signature="e#4043#4485#0" expanded="true" />
+            <element signature="e#4484#4485#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/res/layout/nuevo_prestamo_pelicula.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6386404">
-          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
           <folding>
             <element signature="e#298#316#0" expanded="true" />
-            <element signature="e#477#495#0" expanded="true" />
+            <element signature="e#478#496#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
+    <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/res/layout/modificar_prestamo_pelicula.xml">
+      <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="94" column="45" selection-start-line="94" selection-start-column="45" selection-end-line="94" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1591#1834#0" expanded="true" />
-            <element signature="e#1833#1834#0" expanded="true" />
-            <element signature="e#1968#2283#0" expanded="true" />
-            <element signature="e#2282#2283#0" expanded="true" />
-            <element signature="e#3451#3874#0" expanded="true" />
-            <element signature="e#3873#3874#0" expanded="true" />
-            <element signature="e#4076#4504#0" expanded="true" />
-            <element signature="e#4503#4504#0" expanded="true" />
-            <element signature="e#6075#6336#0" expanded="true" />
-            <element signature="e#6335#6336#0" expanded="true" />
-          </folding>
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/AddPrestamoLibro.java">
+    <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/ModificarPrestamoPelicula.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="82" column="104" selection-start-line="79" selection-start-column="16" selection-end-line="82" selection-end-column="104" />
+          <caret line="81" column="100" selection-start-line="81" selection-start-column="100" selection-end-line="81" selection-end-column="100" />
           <folding>
-            <element signature="e#733#898#0" expanded="true" />
-            <element signature="e#897#898#0" expanded="true" />
-            <element signature="e#1118#2113#0" expanded="true" />
-            <element signature="e#1565#1990#0" expanded="true" />
-            <element signature="e#1989#1990#0" expanded="true" />
-            <element signature="e#2112#2113#0" expanded="true" />
+            <element signature="e#2127#2319#0" expanded="true" />
+            <element signature="e#2318#2319#0" expanded="true" />
+            <element signature="e#2444#3457#0" expanded="true" />
+            <element signature="e#2909#3334#0" expanded="true" />
+            <element signature="e#3333#3334#0" expanded="true" />
+            <element signature="e#3456#3457#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/java/es/uvigo/esei/dm1516/p24/ModificarPrestamoLibro.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="80" column="32" selection-start-line="80" selection-start-column="32" selection-end-line="80" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.331307">
+          <caret line="33" column="28" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1986#2172#0" expanded="true" />
-            <element signature="e#2171#2172#0" expanded="true" />
-            <element signature="e#2297#3304#0" expanded="true" />
-            <element signature="e#2756#3181#0" expanded="true" />
-            <element signature="e#3180#3181#0" expanded="true" />
-            <element signature="e#3303#3304#0" expanded="true" />
+            <element signature="e#2760#3185#0" expanded="true" />
+            <element signature="e#3184#3185#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/res/layout/modificar_prestamo_libro.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#10503#10530#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LoanWallet/src/main/res/layout/nuevo_prestamo_libro.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
