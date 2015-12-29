@@ -65,7 +65,7 @@ public class PrestamosPeliculas extends Activity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         super.onCreateOptionsMenu(menu);
-        this.getMenuInflater().inflate(R.menu.prestamo_menu,menu);
+        this.getMenuInflater().inflate(R.menu.prestamo_menu, menu);
         return true;
     }
 
@@ -132,7 +132,7 @@ public class PrestamosPeliculas extends Activity {
     private void opciones(final int pos) {
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
         alert.setTitle("Opciones");
-        alert.setItems(new String[]{"Renovar", "Modificar", "Eliminar"}, new DialogInterface.OnClickListener() {
+        alert.setItems(new String[]{"Renovar", "Modificar", "Eliminar", "Buscar en Internet"}, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 if (which == 0) {
@@ -141,6 +141,8 @@ public class PrestamosPeliculas extends Activity {
                     PrestamosPeliculas.this.modificar(pos);
                 } else if (which == 2) {
                     PrestamosPeliculas.this.eliminar(pos);
+                } else if (which == 3) {
+                    PrestamosPeliculas.this.busquedaInternet(pos);
                 }
             }
         });
@@ -225,6 +227,12 @@ public class PrestamosPeliculas extends Activity {
         } else {
             Toast.makeText(this.getApplicationContext(),"No se ha podido eliminar las película", Toast.LENGTH_LONG).show();
         }
+    }
+
+    private void busquedaInternet(int pos) {
+        Intent intent = new Intent(PrestamosPeliculas.this,Navegador.class);
+        intent.putExtra("URL", PrestamosPeliculas.this.peliculas.get(pos).getTitulo());
+        PrestamosPeliculas.this.startActivity(intent);
     }
 
 }
