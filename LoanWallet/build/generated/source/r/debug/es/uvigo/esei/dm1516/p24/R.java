@@ -11,42 +11,46 @@ public final class R {
     public static final class attr {
     }
     public static final class id {
-        public static final int AddLoan=0x7f050021;
-        public static final int AddPelicula=0x7f050023;
-        public static final int btnAddLibro=0x7f05001e;
-        public static final int btnAddPelicula=0x7f05001f;
-        public static final int btnLibros=0x7f050001;
-        public static final int btnModificarLibro=0x7f050012;
-        public static final int btnModificarPelicula=0x7f05001d;
-        public static final int btnPeliculas=0x7f050002;
-        public static final int calendar=0x7f05000f;
-        public static final int datePicker=0x7f050000;
-        public static final int labelAno=0x7f05000a;
-        public static final int labelAnoPelicula=0x7f050018;
-        public static final int labelAutores=0x7f050008;
-        public static final int labelDirectorPelicula=0x7f050015;
-        public static final int labelDuracionPelicula=0x7f05001a;
-        public static final int labelEditorial=0x7f05000c;
-        public static final int labelFinPrestamo=0x7f05000e;
-        public static final int labelFinPrestamoPelicula=0x7f05001b;
-        public static final int labelGeneroPelicula=0x7f050017;
-        public static final int labelISBN=0x7f050004;
-        public static final int labelLugarPrestamo=0x7f050011;
-        public static final int labelLugarPrestamoPelicula=0x7f05001c;
-        public static final int labelTitulo=0x7f050006;
-        public static final int labelTituloPelicula=0x7f050013;
-        public static final int listView=0x7f050020;
-        public static final int listViewPeliculas=0x7f050022;
-        public static final int tagAno=0x7f050009;
-        public static final int tagAutores=0x7f050007;
-        public static final int tagDirector=0x7f050014;
-        public static final int tagDuracion=0x7f050019;
-        public static final int tagEditorial=0x7f05000b;
-        public static final int tagFinPrestamo=0x7f05000d;
-        public static final int tagGenero=0x7f050016;
-        public static final int tagISBN=0x7f050003;
-        public static final int tagLugarPrestamo=0x7f050010;
-        public static final int tagTitulo=0x7f050005;
+        public static final int AddLoan=0x7f060021;
+        public static final int AddPelicula=0x7f060023;
+        public static final int btnAddLibro=0x7f06001e;
+        public static final int btnAddPelicula=0x7f06001f;
+        public static final int btnLibros=0x7f060001;
+        public static final int btnModificarLibro=0x7f060012;
+        public static final int btnModificarPelicula=0x7f06001d;
+        public static final int btnPeliculas=0x7f060002;
+        public static final int calendar=0x7f06000f;
+        public static final int datePicker=0x7f060000;
+        public static final int labelAno=0x7f06000a;
+        public static final int labelAnoPelicula=0x7f060018;
+        public static final int labelAutores=0x7f060008;
+        public static final int labelDirectorPelicula=0x7f060015;
+        public static final int labelDuracionPelicula=0x7f06001a;
+        public static final int labelEditorial=0x7f06000c;
+        public static final int labelFinPrestamo=0x7f06000e;
+        public static final int labelFinPrestamoPelicula=0x7f06001b;
+        public static final int labelGeneroPelicula=0x7f060017;
+        public static final int labelISBN=0x7f060004;
+        public static final int labelLugarPrestamo=0x7f060011;
+        public static final int labelLugarPrestamoPelicula=0x7f06001c;
+        public static final int labelTitulo=0x7f060006;
+        public static final int labelTituloPelicula=0x7f060013;
+        public static final int listView=0x7f060020;
+        public static final int listViewPeliculas=0x7f060022;
+        public static final int mainMenuItemBorrarDatos=0x7f060027;
+        public static final int mainMenuNuevoPrestamo=0x7f060024;
+        public static final int mainSubMenuLibro=0x7f060025;
+        public static final int mainSubMenuPelicula=0x7f060026;
+        public static final int tagAno=0x7f060009;
+        public static final int tagAutores=0x7f060007;
+        public static final int tagDirector=0x7f060014;
+        public static final int tagDuracion=0x7f060019;
+        public static final int tagEditorial=0x7f06000b;
+        public static final int tagFinPrestamo=0x7f06000d;
+        public static final int tagGenero=0x7f060016;
+        public static final int tagISBN=0x7f060003;
+        public static final int tagLugarPrestamo=0x7f060010;
+        public static final int tagTitulo=0x7f060005;
     }
     public static final class layout {
         public static final int calendar=0x7f030000;
@@ -57,6 +61,9 @@ public final class R {
         public static final int nuevo_prestamo_pelicula=0x7f030005;
         public static final int prestamos_libros=0x7f030006;
         public static final int prestamos_peliculas=0x7f030007;
+    }
+    public static final class menu {
+        public static final int main_menu=0x7f050000;
     }
     public static final class mipmap {
         public static final int calendar=0x7f020000;
@@ -74,15 +81,19 @@ public final class R {
         public static final int btnOK=0x7f040008;
         public static final int btnPeliculas=0x7f040009;
         public static final int calendar=0x7f04000a;
-        public static final int tagAno=0x7f04000b;
-        public static final int tagAutores=0x7f04000c;
-        public static final int tagDirector=0x7f04000d;
-        public static final int tagDuracion=0x7f04000e;
-        public static final int tagEditorial=0x7f04000f;
-        public static final int tagFinPrestamo=0x7f040010;
-        public static final int tagGenero=0x7f040011;
-        public static final int tagISBN=0x7f040012;
-        public static final int tagLugarPrestamo=0x7f040013;
-        public static final int tagTitulo=0x7f040014;
+        public static final int labelMainSubMenuLibro=0x7f04000b;
+        public static final int labelMainSubMenuPelicula=0x7f04000c;
+        public static final int labelMenuBorrarDatos=0x7f04000d;
+        public static final int labelMenuNuevoPrestamo=0x7f04000e;
+        public static final int tagAno=0x7f04000f;
+        public static final int tagAutores=0x7f040010;
+        public static final int tagDirector=0x7f040011;
+        public static final int tagDuracion=0x7f040012;
+        public static final int tagEditorial=0x7f040013;
+        public static final int tagFinPrestamo=0x7f040014;
+        public static final int tagGenero=0x7f040015;
+        public static final int tagISBN=0x7f040016;
+        public static final int tagLugarPrestamo=0x7f040017;
+        public static final int tagTitulo=0x7f040018;
     }
 }

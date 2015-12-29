@@ -11,6 +11,10 @@
     <string name="btnOK">Aceptar</string>
     <string name="btnPeliculas">Películas</string>
     <string name="calendar">calendar</string>
+    <string name="labelMainSubMenuLibro">Libro</string>
+    <string name="labelMainSubMenuPelicula">Pelicula</string>
+    <string name="labelMenuBorrarDatos">Borrar Datos</string>
+    <string name="labelMenuNuevoPrestamo">Nuevo Prestamo</string>
     <string name="tagAno">Año:</string>
     <string name="tagAutores">Autores:</string>
     <string name="tagDirector">Director:</string>

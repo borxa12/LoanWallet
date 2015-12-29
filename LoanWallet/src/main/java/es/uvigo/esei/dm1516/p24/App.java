@@ -10,6 +10,8 @@ import java.util.ArrayList;
  */
 public class App extends Application {
 
+    private LoanWalletSQL db;
+
     private ArrayAdapter<Libro> librosAdapter;
     private ArrayList<Libro> libros;
 
@@ -19,6 +21,8 @@ public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+
+        this.db = new LoanWalletSQL(this.getApplicationContext());
 
         this.libros = new ArrayList<>();
         this.librosAdapter = new ArrayAdapter<Libro>(
@@ -34,6 +38,11 @@ public class App extends Application {
                 this.peliculas
 
         );
+    }
+
+
+    public LoanWalletSQL getDb() {
+        return db;
     }
 
     public ArrayAdapter<Libro> getLibrosAdapter() {

@@ -35,6 +35,8 @@ public class PrestamosLibros extends Activity {
         this.items.clear();
         this.itemsAdapter.notifyDataSetChanged();
 
+        LoanWalletSQL db = ((App) this.getApplication()).getDb();
+        db.onCreate(db.getWritableDatabase());
         PrestamosLibros.this.actualizarLista();
 
         Button btnAdd = (Button) this.findViewById(R.id.AddLoan);

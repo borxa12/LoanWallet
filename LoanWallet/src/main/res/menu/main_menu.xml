@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/mainMenuNuevoPrestamo" android:title="@string/labelMenuNuevoPrestamo" >
+        <menu>
+            <item android:id="@+id/mainSubMenuLibro"
+                android:title="@string/labelMainSubMenuLibro" />
+            <item android:id="@+id/mainSubMenuPelicula"
+                android:title="@string/labelMainSubMenuPelicula" />
+        </menu>
+    </item>
+    <item android:id="@+id/mainMenuItemBorrarDatos" android:title="@string/labelMenuBorrarDatos" />
+</menu>

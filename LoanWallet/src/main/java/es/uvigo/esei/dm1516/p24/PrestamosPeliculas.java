@@ -35,6 +35,8 @@ public class PrestamosPeliculas extends Activity {
         this.peliculas.clear();
         this.peliculasAdapter.notifyDataSetChanged();
 
+        LoanWalletSQL db = ((App) this.getApplication()).getDb();
+        db.onCreate(db.getWritableDatabase());
         PrestamosPeliculas.this.actualizarLista();
 
         Button btnAdd = (Button) this.findViewById(R.id.AddPelicula);
