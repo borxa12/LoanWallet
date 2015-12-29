@@ -5,7 +5,10 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
@@ -70,6 +73,30 @@ public class ModificarPrestamoLibro extends Activity {
                 alert.create().show();
             }
         });
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.i("onPause()", "Llamado el método onPause() de la clase ModificarPrestamoLibro");
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        super.onCreateOptionsMenu(menu);
+        this.getMenuInflater().inflate(R.menu.edicion_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        super.onOptionsItemSelected(item);
+        switch (item.getItemId()) {
+            case R.id.mainMenuAtras:
+                this.finish();
+                break;
+        }
+        return true;
     }
 
     public void modificarPrestamo(Libro libro) {

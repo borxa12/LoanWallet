@@ -11,6 +11,7 @@
     <string name="tagLugarPrestamo">Establecimiento Prestamista:</string>
     <string name="tagDirector">Director:</string>
     <string name="tagDuracion">Duración:</string>
+    <string name="tagMIN">min</string>
     <string name="tagGenero">Genero:</string>
     <string name="btnCancel">Cancelar</string>
     <string name="btnOK">Aceptar</string>
@@ -25,4 +26,5 @@
     <string name="labelMainSubMenuLibro">Libro</string>
     <string name="labelMainSubMenuPelicula">Pelicula</string>
     <string name="labelMenuBorrarDatos">Borrar Datos</string>
+    <string name="labelMenuAtras">Atrás</string>
 </resources>

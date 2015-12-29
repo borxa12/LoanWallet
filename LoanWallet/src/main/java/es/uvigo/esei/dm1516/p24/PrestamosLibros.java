@@ -8,6 +8,9 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -39,17 +42,7 @@ public class PrestamosLibros extends Activity {
         db.onCreate(db.getWritableDatabase());
         PrestamosLibros.this.actualizarLista();
 
-        Button btnAdd = (Button) this.findViewById(R.id.AddLoan);
         ListView lvBooks = (ListView) this.findViewById(R.id.listView);
-
-        btnAdd.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(PrestamosLibros.this,AddPrestamoLibro.class);
-                PrestamosLibros.this.startActivity(intent);
-            }
-        });
-
         lvBooks.setLongClickable(true);
         lvBooks.setAdapter(this.itemsAdapter);
         lvBooks.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
@@ -61,6 +54,60 @@ public class PrestamosLibros extends Activity {
                 return false;
             }
         });
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.i("onPause()", "Llamado el método onPause() de la clase PrestamosLibros");
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        super.onCreateOptionsMenu(menu);
+        this.getMenuInflater().inflate(R.menu.prestamo_menu,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        super.onOptionsItemSelected(item);
+        switch (item.getItemId()) {
+            case R.id.mainMenuAtras:
+                    this.finish();
+                break;
+            case R.id.mainMenuNuevoPrestamo:
+                    Intent intent = new Intent(PrestamosLibros.this,AddPrestamoLibro.class);
+                    PrestamosLibros.this.startActivity(intent);
+                break;
+            case R.id.mainMenuItemBorrarDatos:
+                    AlertDialog.Builder alert = new AlertDialog.Builder(this);
+                    alert.setTitle("Eliminar Lista de Préstamos");
+                    alert.setMessage("¿Estás seguro de eliminar toda la lista de préstamos de Libros?");
+                    alert.setPositiveButton("Eliminar", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            LoanWalletSQL sqlDB = new LoanWalletSQL(PrestamosLibros.this.getApplicationContext());
+                            SQLiteDatabase db = sqlDB.getReadableDatabase();
+                            if(db != null) {
+                                db.beginTransaction();
+                                try {
+                                    db.execSQL("DROP TABLE IF EXISTS libros");
+                                    PrestamosLibros.this.items.clear();
+                                    PrestamosLibros.this.itemsAdapter.notifyDataSetChanged();
+                                    db.setTransactionSuccessful();
+                                } finally {
+                                    db.endTransaction();
+                                    Toast.makeText(PrestamosLibros.this.getApplicationContext(), "Datos Borrados de Libros", Toast.LENGTH_LONG).show();
+                                }
+                            }
+                        }
+                    });
+                    alert.setNegativeButton("Cancelar", null);
+                    alert.create().show();
+                break;
+        }
+        return true;
     }
 
     private void actualizarLista() {

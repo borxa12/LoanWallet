@@ -1,6 +1,7 @@
 package es.uvigo.esei.dm1516.p24;
 
 import android.app.Application;
+import android.util.Log;
 import android.widget.ArrayAdapter;
 
 import java.util.ArrayList;
@@ -39,7 +40,6 @@ public class App extends Application {
 
         );
     }
-
 
     public LoanWalletSQL getDb() {
         return db;

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/mainMenuAtras" android:title="@string/labelMenuAtras"
+        android:icon="@android:drawable/ic_menu_revert" android:showAsAction="ifRoom"/>
+    <item android:id="@+id/mainMenuNuevoPrestamo" android:title="@string/labelMenuNuevoPrestamo"
+          android:icon="@android:drawable/ic_menu_add" android:showAsAction="ifRoom"/>
+    <item android:id="@+id/mainMenuItemBorrarDatos" android:title="@string/labelMenuBorrarDatos"
+          android:icon="@android:drawable/ic_delete" android:showAsAction="ifRoom"/>
+</menu>

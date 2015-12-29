@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -57,6 +58,12 @@ public class Main extends Activity {
     protected void onDestroy() {
         super.onDestroy();
         Toast.makeText(this.getApplicationContext(), "Aplicación finalizada. Datos guardados.", Toast.LENGTH_LONG).show();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.i("onPause()", "Llamado el método onPause() de la clase Main");
     }
 
     @Override

@@ -3,9 +3,13 @@ package es.uvigo.esei.dm1516.p24;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.*;
 
@@ -45,13 +49,37 @@ public class AddPrestamoLibro extends Activity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         DatePicker calendar = (DatePicker) dialoglayout.findViewById(R.id.datePicker);
-                        labelFinPrestamo.setText(calendar.getYear() + "-" + (calendar.getMonth()+ 1) + "-" + calendar.getDayOfMonth());
+                        labelFinPrestamo.setText(calendar.getYear() + "-" + (calendar.getMonth() + 1) + "-" + calendar.getDayOfMonth());
                     }
                 });
-                alert.setNegativeButton("Cancelar",null);
+                alert.setNegativeButton("Cancelar", null);
                 alert.create().show();
             }
         });
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.i("onPause()", "Llamado el método onPause() de la clase AddPrestamoLibro");
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        super.onCreateOptionsMenu(menu);
+        this.getMenuInflater().inflate(R.menu.edicion_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        super.onOptionsItemSelected(item);
+        switch (item.getItemId()) {
+            case R.id.mainMenuAtras:
+                    this.finish();
+                break;
+        }
+        return true;
     }
 
     public void addLoan() {

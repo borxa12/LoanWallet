@@ -13,6 +13,7 @@
     <string name="calendar">calendar</string>
     <string name="labelMainSubMenuLibro">Libro</string>
     <string name="labelMainSubMenuPelicula">Pelicula</string>
+    <string name="labelMenuAtras">Atrás</string>
     <string name="labelMenuBorrarDatos">Borrar Datos</string>
     <string name="labelMenuNuevoPrestamo">Nuevo Prestamo</string>
     <string name="tagAno">Año:</string>
@@ -24,5 +25,6 @@
     <string name="tagGenero">Genero:</string>
     <string name="tagISBN">ISBN:</string>
     <string name="tagLugarPrestamo">Establecimiento Prestamista:</string>
+    <string name="tagMIN">min</string>
     <string name="tagTitulo">Título:</string>
 </resources>
