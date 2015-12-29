@@ -11,8 +11,9 @@ public final class R {
     public static final class attr {
     }
     public static final class id {
+        public static final int btnActualizar=0x7f060020;
         public static final int btnAddLibro=0x7f06001f;
-        public static final int btnAddPelicula=0x7f060022;
+        public static final int btnAddPelicula=0x7f060023;
         public static final int btnLibros=0x7f060001;
         public static final int btnModificarLibro=0x7f060012;
         public static final int btnModificarPelicula=0x7f06001e;
@@ -33,27 +34,27 @@ public final class R {
         public static final int labelLugarPrestamoPelicula=0x7f06001d;
         public static final int labelTitulo=0x7f060006;
         public static final int labelTituloPelicula=0x7f060013;
-        public static final int listView=0x7f060023;
-        public static final int listViewPeliculas=0x7f060024;
-        public static final int mainMenuAtras=0x7f060026;
-        public static final int mainMenuItemBorrarDatos=0x7f06002a;
-        public static final int mainMenuNuevoPrestamo=0x7f060027;
-        public static final int mainSubMenuLibro=0x7f060028;
-        public static final int mainSubMenuPelicula=0x7f060029;
+        public static final int listView=0x7f060024;
+        public static final int listViewPeliculas=0x7f060025;
+        public static final int mainMenuAtras=0x7f060027;
+        public static final int mainMenuItemBorrarDatos=0x7f06002b;
+        public static final int mainMenuNuevoPrestamo=0x7f060028;
+        public static final int mainSubMenuLibro=0x7f060029;
+        public static final int mainSubMenuPelicula=0x7f06002a;
         public static final int tagAno=0x7f060009;
         public static final int tagAutores=0x7f060007;
         public static final int tagDirector=0x7f060014;
-        public static final int tagDuracion=0x7f060020;
+        public static final int tagDuracion=0x7f060021;
         public static final int tagEditorial=0x7f06000b;
         public static final int tagFinPrestamo=0x7f06000d;
         public static final int tagGenero=0x7f060016;
         public static final int tagISBN=0x7f060003;
         public static final int tagLugarPrestamo=0x7f060010;
-        public static final int tagMIN=0x7f060021;
+        public static final int tagMIN=0x7f060022;
         public static final int tagTitulo=0x7f060005;
         public static final int textView=0x7f060019;
         public static final int textView2=0x7f06001b;
-        public static final int webView=0x7f060025;
+        public static final int webView=0x7f060026;
     }
     public static final class layout {
         public static final int calendar=0x7f030000;

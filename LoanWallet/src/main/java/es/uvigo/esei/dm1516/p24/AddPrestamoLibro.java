@@ -26,6 +26,12 @@ import java.util.Date;
  */
 public class AddPrestamoLibro extends Activity {
 
+    private EditText labelISBN;
+    private AutoCompleteTextView labelTitulo;
+    private AutoCompleteTextView labelAutores;
+    private EditText labelAno;
+    private EditText labelEditorial;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -95,23 +101,6 @@ public class AddPrestamoLibro extends Activity {
         EditText labelEditorial = (EditText) this.findViewById(R.id.labelEditorial);
         EditText labelFinPrestamo = (EditText) this.findViewById(R.id.labelFinPrestamo);
         EditText labelLugarPrestamo = (EditText) this.findViewById(R.id.labelLugarPrestamo);
-
-        ConnectivityManager connMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
-        if(networkInfo != null && networkInfo.isConnected()) {
-            labelTitulo.setOnKeyListener(new View.OnKeyListener() {
-                @Override
-                public boolean onKey(View v, int keyCode, KeyEvent event) {
-                    String busqueda = labelTitulo.getText().toString().replace(" ","+");
-                    try {
-                        new DownloaderLibro(AddPrestamoLibro.this).execute(new URL("https://www.googleapis.com/books/v1/volumes?q=" + busqueda));
-                    } catch (MalformedURLException e) {
-                        Log.e("MalformedURLException",e.getMessage());
-                    }
-                    return false;
-                }
-            });
-        }
 
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         String fecha = sdf.format(new Date());

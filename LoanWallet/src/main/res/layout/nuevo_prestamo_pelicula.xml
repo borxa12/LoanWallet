@@ -13,8 +13,8 @@
             android:paddingLeft="10dp" android:paddingRight="10dp">
         <LinearLayout
                 android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:layout_weight="0.8" android:layout_gravity="center">
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_weight="0.1" android:layout_gravity="center">
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -25,9 +25,9 @@
         </LinearLayout>
         <LinearLayout
                 android:orientation="horizontal"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.2"
+                android:layout_weight="0.9"
                 android:layout_gravity="center"
                 android:layout_margin="5dp">
             <AutoCompleteTextView
@@ -35,6 +35,21 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/labelTituloPelicula"
                 android:maxLength="200" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.05">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="Actualizar"
+                android:id="@+id/btnActualizar" />
         </LinearLayout>
     </LinearLayout>
     <LinearLayout android:orientation="horizontal"

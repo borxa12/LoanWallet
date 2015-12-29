@@ -2,8 +2,11 @@ package es.uvigo.esei.dm1516.p24;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.database.sqlite.SQLiteDatabase;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -17,6 +20,8 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -30,8 +35,29 @@ public class AddPrestamoPelicula extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.nuevo_prestamo_pelicula);
 
-        Button btnAddPelicula = (Button) this.findViewById(R.id.btnAddPelicula);
+        final AutoCompleteTextView labelTitulo = (AutoCompleteTextView) this.findViewById(R.id.labelTituloPelicula);
+        Button btnActualizar = (Button) this.findViewById(R.id.btnActualizar);
+        btnActualizar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    ConnectivityManager connMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+                    NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
+                    if(networkInfo != null && networkInfo.isConnected()) {
+                        String busqueda = labelTitulo.getText().toString().replace(" ","+");
+                        String url = "http://www.omdbapi.com/?t=" + busqueda + "&y=&plot=short&r=json";
+                        Log.d("URL", url);
+                        new DownloaderPelicula(AddPrestamoPelicula.this).execute(new URL(url));
+                    } else {
+                        Toast.makeText(AddPrestamoPelicula.this.getApplicationContext(),"No hai conexión a Internet", Toast.LENGTH_LONG).show();
+                    }
+                } catch (MalformedURLException e) {
+                    Log.e("MalformedURLException", e.getMessage());
+                }
+            }
+        });
 
+        Button btnAddPelicula = (Button) this.findViewById(R.id.btnAddPelicula);
         btnAddPelicula.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -87,7 +113,7 @@ public class AddPrestamoPelicula extends Activity {
     }
 
     public void addLoan() {
-        AutoCompleteTextView labelTitulo = (AutoCompleteTextView) this.findViewById(R.id.labelTituloPelicula);
+        final AutoCompleteTextView labelTitulo = (AutoCompleteTextView) this.findViewById(R.id.labelTituloPelicula);
         AutoCompleteTextView labelDirector = (AutoCompleteTextView) this.findViewById(R.id.labelDirectorPelicula);
         AutoCompleteTextView labelGenero = (AutoCompleteTextView) this.findViewById(R.id.labelGeneroPelicula);
         EditText labelAno = (EditText) this.findViewById(R.id.labelAnoPelicula);
