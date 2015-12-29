@@ -31,7 +31,7 @@ public class ModificarPrestamoLibro extends Activity {
         final EditText labelFinPrestamo = (EditText) this.findViewById(R.id.labelFinPrestamo);
         EditText labelLugarPrestamo = (EditText) this.findViewById(R.id.labelLugarPrestamo);
 
-        final Pelicula libro = ((App) this.getApplication()).getLibros().get((int) this.getIntent().getExtras().get("posicion"));
+        final Libro libro = ((App) this.getApplication()).getLibros().get((int) this.getIntent().getExtras().get("posicion"));
 
         labelISBN.setText(libro.getISBN());
         labelTitulo.setText(libro.getTitulo());

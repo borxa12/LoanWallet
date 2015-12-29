@@ -136,7 +136,7 @@ public class PrestamosPeliculas extends Activity {
     }
 
     private void modificar(int pos) {
-        Intent intent = new Intent(PrestamosPeliculas.this,ModificarPrestamoLibro.class);
+        Intent intent = new Intent(PrestamosPeliculas.this,ModificarPrestamoPelicula.class);
         intent.putExtra("posicion",pos);
         PrestamosPeliculas.this.startActivity(intent);
     }

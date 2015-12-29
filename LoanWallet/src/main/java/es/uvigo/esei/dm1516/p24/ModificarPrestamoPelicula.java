@@ -41,9 +41,9 @@ public class ModificarPrestamoPelicula extends Activity {
         labelFinPrestamo.setText(pelicula.getFinPrestamo());
         labelLugarPrestamo.setText(pelicula.getLugarPrestamo());
 
-        Button btnModificarLibro = (Button) this.findViewById(R.id.btnModificarLibro);
+        Button btnModificarPelicula = (Button) this.findViewById(R.id.btnModificarPelicula);
 
-        btnModificarLibro.setOnClickListener(new View.OnClickListener() {
+        btnModificarPelicula.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ModificarPrestamoPelicula.this.modificarPrestamo(pelicula);
@@ -87,7 +87,7 @@ public class ModificarPrestamoPelicula extends Activity {
         if(db != null) {
             try {
                 db.beginTransaction();
-                db.execSQL("UPDATE peliculas titulo=?, director=?, ano=?, duracion=?, genero=?, finPrestamo=?, lugarPrestamo=? WHERE titulo=?;",
+                db.execSQL("UPDATE peliculas SET titulo=?, director=?, ano=?, duracion=?, genero=?, finPrestamo=?, lugarPrestamo=? WHERE titulo=?;",
                         new String[]{labelTitulo.getText().toString(), labelDirector.getText().toString(),
                                 labelAno.getText().toString(), labelDuracion.getText().toString(), labelGenero.getText().toString(),
                                 labelFinPrestamo.getText().toString(), labelLugarPrestamo.getText().toString(),
