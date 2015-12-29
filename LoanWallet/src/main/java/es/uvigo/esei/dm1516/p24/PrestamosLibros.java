@@ -3,10 +3,14 @@ package es.uvigo.esei.dm1516.p24;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.net.ConnectivityManager;
+import android.net.Network;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -142,7 +146,13 @@ public class PrestamosLibros extends Activity {
                 } else if (which == 2) {
                     PrestamosLibros.this.eliminar(pos);
                 } else if (which == 3) {
-                    PrestamosLibros.this.busquedaInternet(pos);
+                    ConnectivityManager connMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+                    NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
+                    if(networkInfo != null && networkInfo.isConnected()) {
+                        PrestamosLibros.this.busquedaInternet(pos);
+                    } else {
+                        Toast.makeText(PrestamosLibros.this.getApplicationContext(),"No hay conexión a Internet", Toast.LENGTH_LONG).show();
+                    }
                 }
             }
         });

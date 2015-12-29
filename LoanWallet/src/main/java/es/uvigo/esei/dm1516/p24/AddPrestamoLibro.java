@@ -2,17 +2,22 @@ package es.uvigo.esei.dm1516.p24;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.*;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -84,12 +89,29 @@ public class AddPrestamoLibro extends Activity {
 
     public void addLoan() {
         EditText labelISBN = (EditText) this.findViewById(R.id.labelISBN);
-        AutoCompleteTextView labelTitulo = (AutoCompleteTextView) this.findViewById(R.id.labelTitulo);
+        final AutoCompleteTextView labelTitulo = (AutoCompleteTextView) this.findViewById(R.id.labelTitulo);
         AutoCompleteTextView labelAutores = (AutoCompleteTextView) this.findViewById(R.id.labelAutores);
         EditText labelAno = (EditText) this.findViewById(R.id.labelAno);
         EditText labelEditorial = (EditText) this.findViewById(R.id.labelEditorial);
         EditText labelFinPrestamo = (EditText) this.findViewById(R.id.labelFinPrestamo);
         EditText labelLugarPrestamo = (EditText) this.findViewById(R.id.labelLugarPrestamo);
+
+        ConnectivityManager connMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
+        if(networkInfo != null && networkInfo.isConnected()) {
+            labelTitulo.setOnKeyListener(new View.OnKeyListener() {
+                @Override
+                public boolean onKey(View v, int keyCode, KeyEvent event) {
+                    String busqueda = labelTitulo.getText().toString().replace(" ","+");
+                    try {
+                        new DownloaderLibro(AddPrestamoLibro.this).execute(new URL("https://www.googleapis.com/books/v1/volumes?q=" + busqueda));
+                    } catch (MalformedURLException e) {
+                        Log.e("MalformedURLException",e.getMessage());
+                    }
+                    return false;
+                }
+            });
+        }
 
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         String fecha = sdf.format(new Date());
