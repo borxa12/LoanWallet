@@ -65,7 +65,7 @@ public class PrestamosLibros extends Activity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         super.onCreateOptionsMenu(menu);
-        this.getMenuInflater().inflate(R.menu.prestamo_menu,menu);
+        this.getMenuInflater().inflate(R.menu.prestamo_menu, menu);
         return true;
     }
 
@@ -132,7 +132,7 @@ public class PrestamosLibros extends Activity {
     private void opciones(final int pos) {
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
         alert.setTitle("Opciones");
-        alert.setItems(new String[]{"Renovar", "Modificar", "Eliminar"}, new DialogInterface.OnClickListener() {
+        alert.setItems(new String[]{"Renovar", "Modificar", "Eliminar", "Buscar en Internet"}, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 if (which == 0) {
@@ -141,6 +141,8 @@ public class PrestamosLibros extends Activity {
                     PrestamosLibros.this.modificar(pos);
                 } else if (which == 2) {
                     PrestamosLibros.this.eliminar(pos);
+                } else if (which == 3) {
+                    PrestamosLibros.this.busquedaInternet(pos);
                 }
             }
         });
@@ -225,6 +227,12 @@ public class PrestamosLibros extends Activity {
         } else {
             Toast.makeText(this.getApplicationContext(),"No se ha podido eliminar el libro", Toast.LENGTH_LONG).show();
         }
+    }
+
+    private void busquedaInternet(int pos) {
+        Intent intent = new Intent(PrestamosLibros.this,Navegador.class);
+        intent.putExtra("URL", PrestamosLibros.this.items.get(pos).getTitulo());
+        PrestamosLibros.this.startActivity(intent);
     }
 
 }

@@ -35,11 +35,11 @@ public final class R {
         public static final int labelTituloPelicula=0x7f060013;
         public static final int listView=0x7f060023;
         public static final int listViewPeliculas=0x7f060024;
-        public static final int mainMenuAtras=0x7f060025;
-        public static final int mainMenuItemBorrarDatos=0x7f060029;
-        public static final int mainMenuNuevoPrestamo=0x7f060026;
-        public static final int mainSubMenuLibro=0x7f060027;
-        public static final int mainSubMenuPelicula=0x7f060028;
+        public static final int mainMenuAtras=0x7f060026;
+        public static final int mainMenuItemBorrarDatos=0x7f06002a;
+        public static final int mainMenuNuevoPrestamo=0x7f060027;
+        public static final int mainSubMenuLibro=0x7f060028;
+        public static final int mainSubMenuPelicula=0x7f060029;
         public static final int tagAno=0x7f060009;
         public static final int tagAutores=0x7f060007;
         public static final int tagDirector=0x7f060014;
@@ -53,6 +53,7 @@ public final class R {
         public static final int tagTitulo=0x7f060005;
         public static final int textView=0x7f060019;
         public static final int textView2=0x7f06001b;
+        public static final int webView=0x7f060025;
     }
     public static final class layout {
         public static final int calendar=0x7f030000;
@@ -63,6 +64,7 @@ public final class R {
         public static final int nuevo_prestamo_pelicula=0x7f030005;
         public static final int prestamos_libros=0x7f030006;
         public static final int prestamos_peliculas=0x7f030007;
+        public static final int webview=0x7f030008;
     }
     public static final class menu {
         public static final int edicion_menu=0x7f050000;

@@ -8,6 +8,8 @@
         android:minSdkVersion="17"
         android:targetSdkVersion="17" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name="es.uvigo.esei.dm1516.p24.App"
         android:icon="@mipmap/ic_launcher"
@@ -44,6 +46,10 @@
         <activity
             android:name="es.uvigo.esei.dm1516.p24.ModificarPrestamoPelicula"
             android:label="Modificar Préstamo: Películas" >
+        </activity>
+        <activity
+            android:name="es.uvigo.esei.dm1516.p24.Navegador"
+            android:label="Navegador" >
         </activity>
     </application>
 
