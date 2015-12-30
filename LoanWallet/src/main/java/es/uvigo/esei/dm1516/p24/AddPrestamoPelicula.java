@@ -73,7 +73,7 @@ public class AddPrestamoPelicula extends Activity {
                         Log.d("URL", url);
                         new DownloaderPelicula(AddPrestamoPelicula.this).execute(new URL(url));
                     } else {
-                        Toast.makeText(AddPrestamoPelicula.this.getApplicationContext(),"No hai conexión a Internet", Toast.LENGTH_LONG).show();
+                        Toast.makeText(AddPrestamoPelicula.this.getApplicationContext(),"No hay conexión a Internet", Toast.LENGTH_LONG).show();
                     }
                 } catch (MalformedURLException e) {
                     Log.e("MalformedURLException", e.getMessage());
