@@ -170,7 +170,7 @@ public class PrestamosLibros extends Activity {
         dialog.show();
     }
 
-    public void renovacion(int pos, String fecha) {
+    private void renovacion(int pos, String fecha) {
         final Libro libro = PrestamosLibros.this.items.get(pos);
         int renovaciones = libro.getRenovaciones() + 1;
 

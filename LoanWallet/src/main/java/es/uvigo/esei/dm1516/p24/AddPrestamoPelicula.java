@@ -22,6 +22,7 @@ import android.widget.Toast;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 
 /**
@@ -29,12 +30,36 @@ import java.util.Date;
  */
 public class AddPrestamoPelicula extends Activity {
 
+    private EditText labelTitulo;
+    private EditText labelDirector;
+    private EditText labelGenero;
+    private EditText labelAno;
+    private EditText labelDuracion;
+    private EditText labelFinPrestamo;
+    private EditText labelLugarPrestamo;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.nuevo_prestamo_pelicula);
 
-        final EditText labelTitulo = (EditText) this.findViewById(R.id.labelTituloPelicula);
+        this.labelTitulo = (EditText) this.findViewById(R.id.labelTituloPelicula);
+        this.labelDirector = (EditText) this.findViewById(R.id.labelDirectorPelicula);
+        this.labelGenero = (EditText) this.findViewById(R.id.labelGeneroPelicula);
+        this.labelAno = (EditText) this.findViewById(R.id.labelAnoPelicula);
+        this.labelDuracion = (EditText) this.findViewById(R.id.labelDuracionPelicula);
+        this.labelFinPrestamo = (EditText) this.findViewById(R.id.labelFinPrestamoPelicula);
+        this.labelLugarPrestamo = (EditText) this.findViewById(R.id.labelLugarPrestamoPelicula);
+
+        final ArrayList<EditText> campos = new ArrayList<>();
+        campos.add(labelTitulo);
+        campos.add(labelDirector);
+        campos.add(labelGenero);
+        campos.add(labelAno);
+        campos.add(labelDuracion);
+        campos.add(labelFinPrestamo);
+        campos.add(labelLugarPrestamo);
+
         Button btnActualizar = (Button) this.findViewById(R.id.btnActualizar);
         btnActualizar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,12 +85,13 @@ public class AddPrestamoPelicula extends Activity {
         btnAddPelicula.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AddPrestamoPelicula.this.addLoan();
+                if (App.comprobacionCampos(campos)) {
+                    AddPrestamoPelicula.this.addLoan();
+                }
             }
         });
 
         ImageButton btnCalendar = (ImageButton) this.findViewById(R.id.calendar);
-        final EditText labelFinPrestamo = (EditText) this.findViewById(R.id.labelFinPrestamoPelicula);
         btnCalendar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -78,7 +104,7 @@ public class AddPrestamoPelicula extends Activity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         DatePicker calendar = (DatePicker) dialoglayout.findViewById(R.id.datePicker);
-                        labelFinPrestamo.setText(calendar.getYear() + "-" + (calendar.getMonth()+ 1) + "-" + calendar.getDayOfMonth());
+                        AddPrestamoPelicula.this.labelFinPrestamo.setText(calendar.getYear() + "-" + (calendar.getMonth()+ 1) + "-" + calendar.getDayOfMonth());
                     }
                 });
                 alert.setNegativeButton("Cancelar",null);
@@ -111,15 +137,7 @@ public class AddPrestamoPelicula extends Activity {
         return true;
     }
 
-    public void addLoan() {
-        final EditText labelTitulo = (EditText) this.findViewById(R.id.labelTituloPelicula);
-        EditText labelDirector = (EditText) this.findViewById(R.id.labelDirectorPelicula);
-        EditText labelGenero = (EditText) this.findViewById(R.id.labelGeneroPelicula);
-        EditText labelAno = (EditText) this.findViewById(R.id.labelAnoPelicula);
-        EditText labelDuracion = (EditText) this.findViewById(R.id.labelDuracionPelicula);
-        final EditText labelFinPrestamo = (EditText) this.findViewById(R.id.labelFinPrestamoPelicula);
-        EditText labelLugarPrestamo = (EditText) this.findViewById(R.id.labelLugarPrestamoPelicula);
-
+    private void addLoan() {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         String fecha = sdf.format(new Date());
 
@@ -130,13 +148,14 @@ public class AddPrestamoPelicula extends Activity {
             try {
                 db.beginTransaction();
                 db.execSQL("INSERT OR IGNORE INTO peliculas(titulo,director,ano,duracion,genero,renovaciones,fechaPrestamo,finPrestamo,lugarPrestamo)" +
-                        "VALUES(?,?,?,?,?,0,?,?,?)", new String[]{labelTitulo.getText().toString(), labelDirector.getText().toString(),
-                        labelAno.getText().toString(), labelDuracion.getText().toString(), labelGenero.getText().toString(), fecha,
-                        labelFinPrestamo.getText().toString(), labelLugarPrestamo.getText().toString()});
+                        "VALUES(?,?,?,?,?,0,?,?,?)", new String[]{this.labelTitulo.getText().toString(), this.labelDirector.getText().toString(),
+                        this.labelAno.getText().toString(), this.labelDuracion.getText().toString(), this.labelGenero.getText().toString(), fecha,
+                        this.labelFinPrestamo.getText().toString(), this.labelLugarPrestamo.getText().toString()});
                 db.setTransactionSuccessful();
-                Pelicula pelicula = new Pelicula(labelTitulo.getText().toString(), labelDirector.getText().toString(),
-                        Integer.parseInt(labelAno.getText().toString()), Integer.parseInt(labelDuracion.getText().toString()),
-                        labelGenero.getText().toString(),0,fecha, labelFinPrestamo.getText().toString(), labelLugarPrestamo.getText().toString());
+                Pelicula pelicula = new Pelicula(this.labelTitulo.getText().toString(), this.labelDirector.getText().toString(),
+                        Integer.parseInt(this.labelAno.getText().toString()), Integer.parseInt(this.labelDuracion.getText().toString()),
+                        this.labelGenero.getText().toString(),0,fecha, this.labelFinPrestamo.getText().toString(),
+                        this.labelLugarPrestamo.getText().toString());
                 ((App) this.getApplication()).getPeliculasAdapter().add(pelicula);
                 Toast.makeText(this.getApplicationContext(),"El préstamo se ha insertado satisfactoriamente", Toast.LENGTH_LONG).show();
             } finally {

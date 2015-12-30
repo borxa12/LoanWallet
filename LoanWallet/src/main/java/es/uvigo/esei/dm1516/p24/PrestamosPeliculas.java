@@ -170,7 +170,7 @@ public class PrestamosPeliculas extends Activity {
         dialog.show();
     }
 
-    public void renovacion(int pos, String fecha) {
+    private void renovacion(int pos, String fecha) {
         final Pelicula pelicula = PrestamosPeliculas.this.peliculas.get(pos);
         int renovaciones = pelicula.getRenovaciones() + 1;
 

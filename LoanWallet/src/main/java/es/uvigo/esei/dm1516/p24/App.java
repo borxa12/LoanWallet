@@ -1,7 +1,9 @@
 package es.uvigo.esei.dm1516.p24;
 
 import android.app.Application;
+import android.text.TextUtils;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 
 import java.util.ArrayList;
 
@@ -58,6 +60,17 @@ public class App extends Application {
 
     public ArrayAdapter<Pelicula> getPeliculasAdapter() {
         return peliculasAdapter;
+    }
+
+    public static boolean comprobacionCampos(ArrayList<EditText> campos) {
+        boolean toret = true;
+        for(int i = 0; i < campos.size(); i++) {
+            if(TextUtils.isEmpty(campos.get(i).getText())) {
+                campos.get(i).setError("El campo no puede ser vacío");
+                toret = false;
+            }
+        }
+        return toret;
     }
 
 }

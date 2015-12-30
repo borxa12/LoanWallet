@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.*;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 
 /**
@@ -25,23 +26,43 @@ public class AddPrestamoLibro extends Activity {
     private EditText labelAutores;
     private EditText labelAno;
     private EditText labelEditorial;
+    private EditText labelFinPrestamo;
+    private EditText labelLugarPrestamo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.nuevo_prestamo_libro);
 
-        Button btnAddLoan = (Button) this.findViewById(R.id.btnAddLibro);
+        this.labelISBN = (EditText) this.findViewById(R.id.labelISBN);
+        this.labelTitulo = (EditText) this.findViewById(R.id.labelTitulo);
+        this.labelAutores = (EditText) this.findViewById(R.id.labelAutores);
+        this.labelAno = (EditText) this.findViewById(R.id.labelAno);
+        this.labelEditorial = (EditText) this.findViewById(R.id.labelEditorial);
+        this.labelFinPrestamo = (EditText) this.findViewById(R.id.labelFinPrestamo);
+        this.labelLugarPrestamo = (EditText) this.findViewById(R.id.labelLugarPrestamo);
 
+        final ArrayList<EditText> campos = new ArrayList<>();
+        campos.add(labelISBN);
+        campos.add(labelTitulo);
+        campos.add(labelAutores);
+        campos.add(labelAno);
+        campos.add(labelEditorial);
+        campos.add(labelFinPrestamo);
+        campos.add(labelLugarPrestamo);
+
+
+        Button btnAddLoan = (Button) this.findViewById(R.id.btnAddLibro);
         btnAddLoan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AddPrestamoLibro.this.addLoan();
+                if (App.comprobacionCampos(campos)) {
+                    AddPrestamoLibro.this.addLoan();
+                }
             }
         });
 
         ImageButton btnCalendar = (ImageButton) this.findViewById(R.id.calendar);
-        final EditText labelFinPrestamo = (EditText) this.findViewById(R.id.labelFinPrestamo);
         btnCalendar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -58,7 +79,7 @@ public class AddPrestamoLibro extends Activity {
                     }
                 });
                 alert.setNegativeButton("Cancelar", null);
-                alert.create().show();
+                        alert.create().show();
             }
         });
     }
@@ -87,15 +108,7 @@ public class AddPrestamoLibro extends Activity {
         return true;
     }
 
-    public void addLoan() {
-        EditText labelISBN = (EditText) this.findViewById(R.id.labelISBN);
-        final EditText labelTitulo = (EditText) this.findViewById(R.id.labelTitulo);
-        EditText labelAutores = (EditText) this.findViewById(R.id.labelAutores);
-        EditText labelAno = (EditText) this.findViewById(R.id.labelAno);
-        EditText labelEditorial = (EditText) this.findViewById(R.id.labelEditorial);
-        EditText labelFinPrestamo = (EditText) this.findViewById(R.id.labelFinPrestamo);
-        EditText labelLugarPrestamo = (EditText) this.findViewById(R.id.labelLugarPrestamo);
-
+    private void addLoan() {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         String fecha = sdf.format(new Date());
 
@@ -106,21 +119,25 @@ public class AddPrestamoLibro extends Activity {
             try {
                 db.beginTransaction();
                 db.execSQL("INSERT OR IGNORE INTO libros(ISBN,titulo,autores,ano,editorial,renovaciones,fechaPrestamo,finPrestamo,lugarPrestamo)" +
-                        "VALUES(?,?,?,?,?,0,?,?,?)", new String[]{labelISBN.getText().toString(), labelTitulo.getText().toString(),
-                        labelAutores.getText().toString(), labelAno.getText().toString(), labelEditorial.getText().toString(),
-                        fecha, labelFinPrestamo.getText().toString(), labelLugarPrestamo.getText().toString()});
+                        "VALUES(?,?,?,?,?,0,?,?,?)", new String[]{this.labelISBN.getText().toString(), this.labelTitulo.getText().toString(),
+                        this.labelAutores.getText().toString(), this.labelAno.getText().toString(), this.labelEditorial.getText().toString(),
+                        fecha, this.labelFinPrestamo.getText().toString(), this.labelLugarPrestamo.getText().toString()});
                 db.setTransactionSuccessful();
-                Libro libro = new Libro(labelISBN.getText().toString(), labelTitulo.getText().toString(),
-                        labelAutores.getText().toString(), Integer.parseInt(labelAno.getText().toString()),
-                        labelEditorial.getText().toString(),0,fecha,
-                        labelFinPrestamo.getText().toString(), labelLugarPrestamo.getText().toString());
+                Libro libro = new Libro(this.labelISBN.getText().toString(), this.labelTitulo.getText().toString(),
+                        this.labelAutores.getText().toString(), Integer.parseInt(this.labelAno.getText().toString()),
+                        this.labelEditorial.getText().toString(),0,fecha,
+                        this.labelFinPrestamo.getText().toString(), this.labelLugarPrestamo.getText().toString());
                 ((App) this.getApplication()).getLibrosAdapter().add(libro);
                 Toast.makeText(this.getApplicationContext(),"El préstamo se ha insertado satisfactoriamente", Toast.LENGTH_LONG).show();
             } finally {
                 db.endTransaction();
             }
         } else {
-            Toast.makeText(this.getApplicationContext(),"No se ha podida insetar el préstamo", Toast.LENGTH_LONG).show();
+            if(db == null) {
+                Toast.makeText(this.getApplicationContext(),"No se ha podida insetar el préstamo", Toast.LENGTH_LONG).show();
+            } else {
+                Toast.makeText(this.getApplicationContext(), "Hay campos vacíos", Toast.LENGTH_LONG).show();
+            }
         }
 
         this.finish();

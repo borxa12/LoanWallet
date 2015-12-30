@@ -15,40 +15,60 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageButton;
 
+import java.util.ArrayList;
+
 /**
  * Created by Borxa on 28/12/2015.
  */
 public class ModificarPrestamoLibro extends Activity {
+
+    private EditText labelISBN;
+    private EditText labelTitulo;
+    private EditText labelAutores;
+    private EditText labelAno;
+    private EditText labelEditorial;
+    private EditText labelFinPrestamo;
+    private EditText labelLugarPrestamo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.modificar_prestamo_libro);
 
-        EditText labelISBN = (EditText) this.findViewById(R.id.labelISBN);
-        EditText labelTitulo = (EditText) this.findViewById(R.id.labelTitulo);
-        EditText labelAutores = (EditText) this.findViewById(R.id.labelAutores);
-        EditText labelAno = (EditText) this.findViewById(R.id.labelAno);
-        EditText labelEditorial = (EditText) this.findViewById(R.id.labelEditorial);
-        final EditText labelFinPrestamo = (EditText) this.findViewById(R.id.labelFinPrestamo);
-        EditText labelLugarPrestamo = (EditText) this.findViewById(R.id.labelLugarPrestamo);
+        this.labelISBN = (EditText) this.findViewById(R.id.labelISBN);
+        this.labelTitulo = (EditText) this.findViewById(R.id.labelTitulo);
+        this.labelAutores = (EditText) this.findViewById(R.id.labelAutores);
+        this.labelAno = (EditText) this.findViewById(R.id.labelAno);
+        this.labelEditorial = (EditText) this.findViewById(R.id.labelEditorial);
+        this.labelFinPrestamo = (EditText) this.findViewById(R.id.labelFinPrestamo);
+        this.labelLugarPrestamo = (EditText) this.findViewById(R.id.labelLugarPrestamo);
 
         final Libro libro = ((App) this.getApplication()).getLibros().get((int) this.getIntent().getExtras().get("posicion"));
 
-        labelISBN.setText(libro.getISBN());
-        labelTitulo.setText(libro.getTitulo());
-        labelAutores.setText(libro.getAutores());
-        labelAno.setText(String.valueOf(libro.getAno()));
-        labelEditorial.setText(libro.getEditorial());
-        labelFinPrestamo.setText(libro.getFinPrestamo());
-        labelLugarPrestamo.setText(libro.getLugarPrestamo());
+        this.labelISBN.setText(libro.getISBN());
+        this.labelTitulo.setText(libro.getTitulo());
+        this.labelAutores.setText(libro.getAutores());
+        this.labelAno.setText(String.valueOf(libro.getAno()));
+        this.labelEditorial.setText(libro.getEditorial());
+        this.labelFinPrestamo.setText(libro.getFinPrestamo());
+        this.labelLugarPrestamo.setText(libro.getLugarPrestamo());
+
+        final ArrayList<EditText> campos = new ArrayList<>();
+        campos.add(labelISBN);
+        campos.add(labelTitulo);
+        campos.add(labelAutores);
+        campos.add(labelAno);
+        campos.add(labelEditorial);
+        campos.add(labelFinPrestamo);
+        campos.add(labelLugarPrestamo);
 
         Button btnModificarLibro = (Button) this.findViewById(R.id.btnModificarLibro);
-
         btnModificarLibro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ModificarPrestamoLibro.this.modificarPrestamo(libro);
+                if (App.comprobacionCampos(campos)) {
+                    ModificarPrestamoLibro.this.modificarPrestamo(libro);
+                }
             }
         });
 
@@ -98,15 +118,7 @@ public class ModificarPrestamoLibro extends Activity {
         return true;
     }
 
-    public void modificarPrestamo(Libro libro) {
-        EditText labelISBN = (EditText) this.findViewById(R.id.labelISBN);
-        EditText labelTitulo = (EditText) this.findViewById(R.id.labelTitulo);
-        EditText labelAutores = (EditText) this.findViewById(R.id.labelAutores);
-        EditText labelAno = (EditText) this.findViewById(R.id.labelAno);
-        EditText labelEditorial = (EditText) this.findViewById(R.id.labelEditorial);
-        EditText labelFinPrestamo = (EditText) this.findViewById(R.id.labelFinPrestamo);
-        EditText labelLugarPrestamo = (EditText) this.findViewById(R.id.labelLugarPrestamo);
-
+    private void modificarPrestamo(Libro libro) {
         LoanWalletSQL sqlDB = new LoanWalletSQL(this);
         SQLiteDatabase db = sqlDB.getWritableDatabase();
 
@@ -114,18 +126,18 @@ public class ModificarPrestamoLibro extends Activity {
             try {
                 db.beginTransaction();
                 db.execSQL("UPDATE libros SET ISBN=?, titulo=?, autores=?, ano=?, editorial=?, finPrestamo=?, lugarPrestamo=? WHERE ISBN=?;",
-                        new String[]{labelISBN.getText().toString(), labelTitulo.getText().toString(),
-                                labelAutores.getText().toString(), labelAno.getText().toString(), labelEditorial.getText().toString(),
-                                labelFinPrestamo.getText().toString(), labelLugarPrestamo.getText().toString(),
-                                libro.getISBN().toString()});
+                        new String[]{this.labelISBN.getText().toString(), this.labelTitulo.getText().toString(),
+                                this.labelAutores.getText().toString(), this.labelAno.getText().toString(),
+                                this.labelEditorial.getText().toString(), this.labelFinPrestamo.getText().toString(),
+                                this.labelLugarPrestamo.getText().toString(), libro.getISBN().toString()});
                 db.setTransactionSuccessful();
-                ((App) this.getApplication()).getLibros().get((int) this.getIntent().getExtras().get("posicion")).setISBN(labelISBN.getText().toString());
-                ((App) this.getApplication()).getLibros().get((int) this.getIntent().getExtras().get("posicion")).setTitulo(labelTitulo.getText().toString());
-                ((App) this.getApplication()).getLibros().get((int) this.getIntent().getExtras().get("posicion")).setAutores(labelAutores.getText().toString());
-                ((App) this.getApplication()).getLibros().get((int) this.getIntent().getExtras().get("posicion")).setAno(Integer.parseInt(labelAno.getText().toString()));
-                ((App) this.getApplication()).getLibros().get((int) this.getIntent().getExtras().get("posicion")).setEditorial(labelEditorial.getText().toString());
-                ((App) this.getApplication()).getLibros().get((int) this.getIntent().getExtras().get("posicion")).setFinPrestamo(labelFinPrestamo.getText().toString());
-                ((App) this.getApplication()).getLibros().get((int) this.getIntent().getExtras().get("posicion")).setLugarPrestamo(labelLugarPrestamo.getText().toString());
+                ((App) this.getApplication()).getLibros().get((int) this.getIntent().getExtras().get("posicion")).setISBN(this.labelISBN.getText().toString());
+                ((App) this.getApplication()).getLibros().get((int) this.getIntent().getExtras().get("posicion")).setTitulo(this.labelTitulo.getText().toString());
+                ((App) this.getApplication()).getLibros().get((int) this.getIntent().getExtras().get("posicion")).setAutores(this.labelAutores.getText().toString());
+                ((App) this.getApplication()).getLibros().get((int) this.getIntent().getExtras().get("posicion")).setAno(Integer.parseInt(this.labelAno.getText().toString()));
+                ((App) this.getApplication()).getLibros().get((int) this.getIntent().getExtras().get("posicion")).setEditorial(this.labelEditorial.getText().toString());
+                ((App) this.getApplication()).getLibros().get((int) this.getIntent().getExtras().get("posicion")).setFinPrestamo(this.labelFinPrestamo.getText().toString());
+                ((App) this.getApplication()).getLibros().get((int) this.getIntent().getExtras().get("posicion")).setLugarPrestamo(this.labelLugarPrestamo.getText().toString());
                 ((App) this.getApplication()).getLibrosAdapter().notifyDataSetChanged();
             } finally {
                 db.endTransaction();
