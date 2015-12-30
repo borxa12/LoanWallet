@@ -97,6 +97,17 @@ public class PrestamosPeliculas extends Activity {
                                     db.execSQL("DROP TABLE IF EXISTS peliculas");
                                     PrestamosPeliculas.this.peliculas.clear();
                                     PrestamosPeliculas.this.peliculasAdapter.notifyDataSetChanged();
+                                    db.execSQL("CREATE TABLE IF NOT EXISTS peliculas (" +
+                                            "titulo VARCHAR(200) NOT NULL PRIMARY KEY," +
+                                            "director VARCHAR(200) NULL," +
+                                            "ano INT(4) NULL," +
+                                            "duracion INT NULL," +
+                                            "genero VARCHAR(100) NULL," +
+                                            "renovaciones INT NULL DEFAULT 0," +
+                                            "fechaPrestamo DATETIME NULL," +
+                                            "finPrestamo DATETIME NULL," +
+                                            "lugarPrestamo VARCHAR(80) NULL" +
+                                            ")");
                                     db.setTransactionSuccessful();
                                 } finally {
                                     db.endTransaction();

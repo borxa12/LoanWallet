@@ -97,6 +97,17 @@ public class PrestamosLibros extends Activity {
                                     db.execSQL("DROP TABLE IF EXISTS libros");
                                     PrestamosLibros.this.items.clear();
                                     PrestamosLibros.this.itemsAdapter.notifyDataSetChanged();
+                                    db.execSQL("CREATE TABLE IF NOT EXISTS libros (" +
+                                            "ISBN VARCHAR(20) NOT NULL PRIMARY KEY," +
+                                            "titulo VARCHAR(200) NOT NULL," +
+                                            "autores VARCHAR(200) NULL," +
+                                            "ano INT(4) NULL," +
+                                            "editorial VARCHAR(50) NULL," +
+                                            "renovaciones INT NULL DEFAULT 0," +
+                                            "fechaPrestamo DATETIME NULL," +
+                                            "finPrestamo DATETIME NULL," +
+                                            "lugarPrestamo VARCHAR(80) NULL" +
+                                            ")");
                                     db.setTransactionSuccessful();
                                 } finally {
                                     db.endTransaction();

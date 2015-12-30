@@ -51,7 +51,6 @@ public class AddPrestamoLibro extends Activity {
         campos.add(labelFinPrestamo);
         campos.add(labelLugarPrestamo);
 
-
         Button btnAddLoan = (Button) this.findViewById(R.id.btnAddLibro);
         btnAddLoan.setOnClickListener(new View.OnClickListener() {
             @Override
