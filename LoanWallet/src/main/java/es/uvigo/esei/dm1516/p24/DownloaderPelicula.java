@@ -1,8 +1,10 @@
 package es.uvigo.esei.dm1516.p24;
 
 import android.os.AsyncTask;
+import android.text.TextUtils;
 import android.util.Log;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import org.json.JSONObject;
 
@@ -67,5 +69,9 @@ public class DownloaderPelicula extends AsyncTask<URL,Void,Boolean> {
         labelGenero.setText(this.genero);
         labelAno.setText(this.ano);
         labelDuracion.setText(this.duracion);
+
+        if(TextUtils.isEmpty(this.titulo)) {
+            Toast.makeText(this.activity.getApplicationContext(),"No hay coincidencias",Toast.LENGTH_LONG).show();
+        }
     }
 }
