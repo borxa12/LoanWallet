@@ -2,22 +2,16 @@ package es.uvigo.esei.dm1516.p24;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.database.sqlite.SQLiteDatabase;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.*;
 
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -27,8 +21,8 @@ import java.util.Date;
 public class AddPrestamoLibro extends Activity {
 
     private EditText labelISBN;
-    private AutoCompleteTextView labelTitulo;
-    private AutoCompleteTextView labelAutores;
+    private EditText labelTitulo;
+    private EditText labelAutores;
     private EditText labelAno;
     private EditText labelEditorial;
 
@@ -95,8 +89,8 @@ public class AddPrestamoLibro extends Activity {
 
     public void addLoan() {
         EditText labelISBN = (EditText) this.findViewById(R.id.labelISBN);
-        final AutoCompleteTextView labelTitulo = (AutoCompleteTextView) this.findViewById(R.id.labelTitulo);
-        AutoCompleteTextView labelAutores = (AutoCompleteTextView) this.findViewById(R.id.labelAutores);
+        final EditText labelTitulo = (EditText) this.findViewById(R.id.labelTitulo);
+        EditText labelAutores = (EditText) this.findViewById(R.id.labelAutores);
         EditText labelAno = (EditText) this.findViewById(R.id.labelAno);
         EditText labelEditorial = (EditText) this.findViewById(R.id.labelEditorial);
         EditText labelFinPrestamo = (EditText) this.findViewById(R.id.labelFinPrestamo);

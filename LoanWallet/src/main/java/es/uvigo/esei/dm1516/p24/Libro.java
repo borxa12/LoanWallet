@@ -1,8 +1,5 @@
 package es.uvigo.esei.dm1516.p24;
 
-import java.util.Calendar;
-import java.util.GregorianCalendar;
-
 /**
  * Created by Borxa on 17/11/2015.
  */

@@ -14,11 +14,6 @@ import android.widget.Toast;
 /**
  * Created by Borxa on 29/12/2015.
  */
-// Documentation API Books (Google Books): https://developers.google.com/books/docs/v1/using
-// API Books: https://www.googleapis.com/books/v1/volumes?q=manual+de+ciencia+politica
-// API Movies: http://www.omdbapi.com/?t=frozen&y=&plot=short&r=json
-// Documentation API Music (Spotify): https://developer.spotify.com/web-api/search-item/
-
 public class Main extends Activity {
 
     @Override

@@ -13,7 +13,6 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
@@ -35,7 +34,7 @@ public class AddPrestamoPelicula extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.nuevo_prestamo_pelicula);
 
-        final AutoCompleteTextView labelTitulo = (AutoCompleteTextView) this.findViewById(R.id.labelTituloPelicula);
+        final EditText labelTitulo = (EditText) this.findViewById(R.id.labelTituloPelicula);
         Button btnActualizar = (Button) this.findViewById(R.id.btnActualizar);
         btnActualizar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -113,9 +112,9 @@ public class AddPrestamoPelicula extends Activity {
     }
 
     public void addLoan() {
-        final AutoCompleteTextView labelTitulo = (AutoCompleteTextView) this.findViewById(R.id.labelTituloPelicula);
-        AutoCompleteTextView labelDirector = (AutoCompleteTextView) this.findViewById(R.id.labelDirectorPelicula);
-        AutoCompleteTextView labelGenero = (AutoCompleteTextView) this.findViewById(R.id.labelGeneroPelicula);
+        final EditText labelTitulo = (EditText) this.findViewById(R.id.labelTituloPelicula);
+        EditText labelDirector = (EditText) this.findViewById(R.id.labelDirectorPelicula);
+        EditText labelGenero = (EditText) this.findViewById(R.id.labelGeneroPelicula);
         EditText labelAno = (EditText) this.findViewById(R.id.labelAnoPelicula);
         EditText labelDuracion = (EditText) this.findViewById(R.id.labelDuracionPelicula);
         final EditText labelFinPrestamo = (EditText) this.findViewById(R.id.labelFinPrestamoPelicula);

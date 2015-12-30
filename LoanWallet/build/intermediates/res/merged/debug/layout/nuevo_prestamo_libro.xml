@@ -71,11 +71,12 @@
                 android:layout_weight="0.2"
                 android:layout_gravity="center"
                 android:layout_margin="5dp">
-            <AutoCompleteTextView
+            <EditText
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/labelTitulo"
-                android:maxLength="200" />
+                android:maxLength="200"
+                android:inputType="text" />
         </LinearLayout>
 
     </LinearLayout>
@@ -102,11 +103,12 @@
                       android:layout_height="wrap_content"
                       android:layout_weight="0.25" android:layout_gravity="center"
         >
-            <MultiAutoCompleteTextView
+            <EditText
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/labelAutores"
-                android:maxLength="200" />
+                android:maxLength="200"
+                android:inputType="text" />
         </LinearLayout>
     </LinearLayout>
     <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"

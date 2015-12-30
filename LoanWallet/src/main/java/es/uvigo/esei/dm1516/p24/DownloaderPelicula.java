@@ -1,18 +1,12 @@
 package es.uvigo.esei.dm1516.p24;
 
-import android.content.Context;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.util.Log;
-import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import org.json.JSONObject;
 
 import java.io.BufferedInputStream;
-import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
@@ -62,9 +56,9 @@ public class DownloaderPelicula extends AsyncTask<URL,Void,Boolean> {
     protected void onPostExecute(Boolean result) {
         super.onPostExecute(result);
 
-        AutoCompleteTextView labelTitulo = (AutoCompleteTextView) this.activity.findViewById(R.id.labelTituloPelicula);
-        AutoCompleteTextView labelDirector = (AutoCompleteTextView) this.activity.findViewById(R.id.labelDirectorPelicula);
-        AutoCompleteTextView labelGenero = (AutoCompleteTextView) this.activity.findViewById(R.id.labelGeneroPelicula);
+        EditText labelTitulo = (EditText) this.activity.findViewById(R.id.labelTituloPelicula);
+        EditText labelDirector = (EditText) this.activity.findViewById(R.id.labelDirectorPelicula);
+        EditText labelGenero = (EditText) this.activity.findViewById(R.id.labelGeneroPelicula);
         EditText labelAno = (EditText) this.activity.findViewById(R.id.labelAnoPelicula);
         EditText labelDuracion = (EditText) this.activity.findViewById(R.id.labelDuracionPelicula);
 

@@ -30,11 +30,12 @@
                 android:layout_weight="0.9"
                 android:layout_gravity="center"
                 android:layout_margin="5dp">
-            <AutoCompleteTextView
+            <EditText
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/labelTituloPelicula"
-                android:maxLength="200" />
+                android:maxLength="200"
+                android:inputType="text" />
 
         </LinearLayout>
 
@@ -75,11 +76,12 @@
                       android:layout_height="wrap_content"
                       android:layout_weight="0.25" android:layout_gravity="center"
         >
-            <MultiAutoCompleteTextView
+            <EditText
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/labelDirectorPelicula"
-                android:maxLength="200" />
+                android:maxLength="200"
+                android:inputType="text" />
         </LinearLayout>
     </LinearLayout>
 
@@ -114,11 +116,12 @@
             android:layout_weight="0.25"
             android:layout_gravity="center" >
 
-            <MultiAutoCompleteTextView
+            <EditText
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/labelGeneroPelicula"
-                android:maxLength="200" />
+                android:maxLength="200"
+                android:inputType="text" />
         </LinearLayout>
     </LinearLayout>
 

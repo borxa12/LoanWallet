@@ -10,7 +10,6 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
@@ -26,9 +25,9 @@ public class ModificarPrestamoPelicula extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.modificar_prestamo_pelicula);
 
-        AutoCompleteTextView labelTitulo = (AutoCompleteTextView) this.findViewById(R.id.labelTituloPelicula);
-        AutoCompleteTextView labelDirector = (AutoCompleteTextView) this.findViewById(R.id.labelDirectorPelicula);
-        AutoCompleteTextView labelGenero = (AutoCompleteTextView) this.findViewById(R.id.labelGeneroPelicula);
+        EditText labelTitulo = (EditText) this.findViewById(R.id.labelTituloPelicula);
+        EditText labelDirector = (EditText) this.findViewById(R.id.labelDirectorPelicula);
+        EditText labelGenero = (EditText) this.findViewById(R.id.labelGeneroPelicula);
         EditText labelAno = (EditText) this.findViewById(R.id.labelAnoPelicula);
         EditText labelDuracion = (EditText) this.findViewById(R.id.labelDuracionPelicula);
         final EditText labelFinPrestamo = (EditText) this.findViewById(R.id.labelFinPrestamoPelicula);
@@ -100,9 +99,9 @@ public class ModificarPrestamoPelicula extends Activity {
     }
 
     public void modificarPrestamo(Pelicula pelicula) {
-        AutoCompleteTextView labelTitulo = (AutoCompleteTextView) this.findViewById(R.id.labelTituloPelicula);
-        AutoCompleteTextView labelDirector = (AutoCompleteTextView) this.findViewById(R.id.labelDirectorPelicula);
-        AutoCompleteTextView labelGenero = (AutoCompleteTextView) this.findViewById(R.id.labelGeneroPelicula);
+        EditText labelTitulo = (EditText) this.findViewById(R.id.labelTituloPelicula);
+        EditText labelDirector = (EditText) this.findViewById(R.id.labelDirectorPelicula);
+        EditText labelGenero = (EditText) this.findViewById(R.id.labelGeneroPelicula);
         EditText labelAno = (EditText) this.findViewById(R.id.labelAnoPelicula);
         EditText labelDuracion = (EditText) this.findViewById(R.id.labelDuracionPelicula);
         final EditText labelFinPrestamo = (EditText) this.findViewById(R.id.labelFinPrestamoPelicula);

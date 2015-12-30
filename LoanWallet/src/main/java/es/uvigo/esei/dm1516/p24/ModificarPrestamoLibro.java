@@ -10,7 +10,6 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
@@ -27,8 +26,8 @@ public class ModificarPrestamoLibro extends Activity {
         setContentView(R.layout.modificar_prestamo_libro);
 
         EditText labelISBN = (EditText) this.findViewById(R.id.labelISBN);
-        AutoCompleteTextView labelTitulo = (AutoCompleteTextView) this.findViewById(R.id.labelTitulo);
-        AutoCompleteTextView labelAutores = (AutoCompleteTextView) this.findViewById(R.id.labelAutores);
+        EditText labelTitulo = (EditText) this.findViewById(R.id.labelTitulo);
+        EditText labelAutores = (EditText) this.findViewById(R.id.labelAutores);
         EditText labelAno = (EditText) this.findViewById(R.id.labelAno);
         EditText labelEditorial = (EditText) this.findViewById(R.id.labelEditorial);
         final EditText labelFinPrestamo = (EditText) this.findViewById(R.id.labelFinPrestamo);
@@ -101,8 +100,8 @@ public class ModificarPrestamoLibro extends Activity {
 
     public void modificarPrestamo(Libro libro) {
         EditText labelISBN = (EditText) this.findViewById(R.id.labelISBN);
-        AutoCompleteTextView labelTitulo = (AutoCompleteTextView) this.findViewById(R.id.labelTitulo);
-        AutoCompleteTextView labelAutores = (AutoCompleteTextView) this.findViewById(R.id.labelAutores);
+        EditText labelTitulo = (EditText) this.findViewById(R.id.labelTitulo);
+        EditText labelAutores = (EditText) this.findViewById(R.id.labelAutores);
         EditText labelAno = (EditText) this.findViewById(R.id.labelAno);
         EditText labelEditorial = (EditText) this.findViewById(R.id.labelEditorial);
         EditText labelFinPrestamo = (EditText) this.findViewById(R.id.labelFinPrestamo);

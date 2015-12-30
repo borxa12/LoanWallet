@@ -1,7 +1,6 @@
 package es.uvigo.esei.dm1516.p24;
 
 import android.app.Application;
-import android.util.Log;
 import android.widget.ArrayAdapter;
 
 import java.util.ArrayList;
